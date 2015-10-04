@@ -1,0 +1,13 @@
+#main-news {
+  padding: 20px;
+}
+#main-news h2 {
+  font-size: 2rem;
+  padding: 0;
+}
+#main-news article {
+  width: 100%;
+}
+#main-news article .left .date {
+  background: #fff;
+}

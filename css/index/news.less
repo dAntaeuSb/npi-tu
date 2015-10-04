@@ -1,0 +1,115 @@
+#main-news{
+  padding: 20px;
+
+  h2{
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  article{
+    border-bottom: 1px solid #999;
+    display: table-row;
+    position: relative;
+    vertical-align: baseline;
+    width: 100%;
+
+    .left{
+      display: table-cell;
+      vertical-align: top;
+      padding: 10px;
+      height: 100%;
+      width: 100px;
+
+      .date{
+        background: #fff;
+        //border: solid 6px #eee;
+        text-align: center;
+        font-size: 2.4rem;
+        padding-top: 12px;
+        height: 80px;
+        width: 80px;
+
+        .lh-border-radius(50%);
+        .lh-box-shadow(0 0 20px rgba(0,0,0,.1));
+
+        small{
+          display: block;
+          font-size: 1rem;
+        }
+      }
+
+      .more-news{
+        background: #fff;
+        color: @main;
+        border: solid 6px @main;
+        text-align: center;
+        font-size: 2.4rem;
+        padding-top: 14px;
+        height: 80px;
+        width: 80px;
+
+        .lh-border-radius(50%);
+        //.lh-box-shadow(0 0 20px rgba(0,0,0,.1));
+
+        small{
+          display: block;
+          font-size: 1rem;
+        }
+      }
+
+      .mileline{
+        background: #eee;
+        position: absolute;
+        margin-left: 37px;
+        height: 100%;
+        width: 6px;
+        z-index: -1;
+      }
+    }
+
+    .content{
+      display: table-cell;
+      padding: 10px 20px;
+      position:relative;
+      text-align: justify;
+      text-indent: 1rem;
+      line-height: 125%;
+      vertical-align: top;
+      width: 100%;
+
+      hr{
+        background: #eee;
+        margin: 36px 0 .6rem -73px;
+        position: relative;
+        height: 6px;
+        z-index: -1;
+      }
+
+      header.article-header{
+        padding: 1.4rem 3rem 1.4rem 0;
+        position: relative;
+        margin: 0 0 .6rem 0;
+        text-indent: 0;
+
+        h3{
+          font-size: 1.4rem;
+          font-weight: bold;
+          line-height: 100%;
+        }
+      }
+
+      footer.article-footer{
+        border-bottom: 1px solid #aaa;
+        background: #eee;
+        margin-top: 10px;
+        padding: 10px;
+      }
+    }
+
+    &:after{
+      clear: both;
+      font-size:0;
+      overflow:hidden;
+    }
+  }
+}

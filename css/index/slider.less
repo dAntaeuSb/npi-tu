@@ -1,0 +1,39 @@
+.swiper-container {
+  width: 100%;
+  height: 60vh;
+  margin: 20px auto;
+}
+.swiper-slide {
+  background: #fff;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px 20px;
+
+  .lh-transition(opacity ease .5s);
+
+  @media (min-width: 768px) {
+    max-width: 750px;
+  }
+  @media (min-width: 992px) {
+    max-width: 970px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1170px;
+  }
+
+  h3{
+    color: @main;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  p{
+    font-size: 1.2rem;
+    padding: .8rem 0;
+  }
+
+  &.swiper-slide-prev, &.swiper-slide-next{
+    opacity: .5;
+  }
+}

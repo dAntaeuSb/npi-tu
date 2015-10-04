@@ -1,0 +1,345 @@
+header#main-header {
+  background-color: #fff;
+  background-image: url('/images/header.jpg');
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+header#main-header nav#main-header-nav {
+  background-color: #1d3d86;
+  background-position: center;
+  background-size: cover;
+  font-weight: 300;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+header#main-header nav#main-header-nav #main-header-nav-bg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  z-index: -1;
+  background-image: url('/images/header-blured.jpg');
+  background-repeat: no-repeat;
+}
+header#main-header nav#main-header-nav > .impact > .container {
+  padding: 0;
+}
+header#main-header nav#main-header-nav #top-logo {
+  background: url("/images/logos/only-name.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+  height: 50px;
+  width: 70px;
+}
+header#main-header nav#main-header-nav .header-nav-list {
+  color: #fff;
+  float: left;
+  list-style: none;
+  margin: 0;
+}
+header#main-header nav#main-header-nav .header-nav-list > li {
+  display: inline-block;
+  font-size: 17px;
+}
+header#main-header nav#main-header-nav .header-nav-list > li.parent:hover,
+header#main-header nav#main-header-nav .header-nav-list > li.parent.active {
+  background: #eee;
+  color: #1d3d86;
+}
+header#main-header nav#main-header-nav .header-nav-list > li:hover,
+header#main-header nav#main-header-nav .header-nav-list > li.active {
+  background: #fff;
+}
+header#main-header nav#main-header-nav .header-nav-list > li:hover a,
+header#main-header nav#main-header-nav .header-nav-list > li.active a {
+  color: #1d3d86;
+}
+header#main-header nav#main-header-nav .header-nav-list > li a {
+  color: #fff;
+  display: block;
+  padding: 0 20px;
+}
+header#main-header nav#main-header-nav .header-nav-list > li a:hover {
+  text-decoration: none;
+}
+header#main-header nav#main-header-nav .header-nav-list > li a:hover .borderland {
+  border-bottom: 3px solid #1d3d86;
+}
+header#main-header nav#main-header-nav .header-nav-list > li a.active .borderland {
+  border-bottom: 3px solid #1d3d86;
+}
+header#main-header nav#main-header-nav .header-nav-list > li a .borderland {
+  display: block;
+  padding: 20px 0;
+  border-bottom: 3px solid #fff;
+}
+header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper {
+  display: none;
+  left: 0;
+  position: absolute;
+  min-height: 400px;
+  clip: rect(auto, auto, 1000px, auto);
+  width: 100%;
+}
+header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu {
+  background: #fff;
+  min-height: 400px;
+  padding: 0;
+  overflow: hidden;
+  max-height: 80vh;
+  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+}
+header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu ul.lvl-1 {
+  background: #eee;
+  padding: .3rem 0;
+  float: left;
+  overflow-y: scroll;
+  max-width: 20%;
+}
+header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu ul.lvl-1 li {
+  color: #1d3d86;
+  display: block;
+  position: relative;
+  padding: .7rem 1rem;
+}
+header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu ul.lvl-1 li:hover {
+  background: #fff;
+  z-index: 5;
+}
+header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu ul.lvl-1 li ul.lvl-2 {
+  display: none;
+}
+header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu .nesting-sub {
+  float: right;
+  width: 80%;
+  -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+}
+header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu .nesting-sub .default-message {
+  color: #1d3d86;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  text-align: center;
+  height: 460px;
+}
+header#main-header nav#main-header-nav .header-nav-list > li.parent:hover .nesting-menu-wrapper,
+header#main-header nav#main-header-nav .header-nav-list > li.parent.active .nesting-menu-wrapper {
+  display: block;
+}
+header#main-header nav#main-header-nav #main-header-modes {
+  float: right;
+  padding: .8rem 0;
+}
+header#main-header nav#main-header-nav #main-header-modes .mode {
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  padding: .4rem .7rem;
+  margin-left: .7rem;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+header#main-header nav#main-header-nav #main-header-modes .mode i {
+  padding: 0 3px;
+}
+header#main-header nav#main-header-nav #main-header-modes .mode:hover {
+  background-color: #fff;
+  color: #1d3d86;
+}
+header#main-header nav#main-header-nav #main-header-modes .mode.active ul {
+  display: block;
+}
+header#main-header nav#main-header-nav #main-header-modes .mode ul {
+  background-color: #fff;
+  border: 1px solid #fff;
+  display: none;
+  color: #1d3d86;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+header#main-header nav#main-header-nav #main-header-modes .mode ul li {
+  padding: .4rem .7rem;
+}
+header#main-header nav#main-header-nav #main-header-modes .mode ul li:first-child {
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius-topright: 5px;
+  -moz-background-clip: padding;
+  border-top-right-radius: 5px;
+  background-clip: padding-box;
+}
+header#main-header nav#main-header-nav #main-header-modes .mode ul li:last-child {
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius-bottomright: 5px;
+  -moz-background-clip: padding;
+  border-bottom-right-radius: 5px;
+  background-clip: padding-box;
+}
+header#main-header nav#main-header-nav #main-header-modes .mode ul li:hover {
+  background-color: #1d3d86;
+  color: #fff;
+}
+header#main-header div#main-header-landing .container {
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  position: relative;
+  padding-top: 64px;
+  z-index: 2;
+}
+header#main-header div#main-header-landing .container h1 {
+  font-size: 6vh;
+  font-weight: 100;
+  text-align: center;
+  padding-bottom: 3vh;
+}
+header#main-header div#main-header-landing .container h2 {
+  font-size: 4vh;
+  font-weight: 300;
+  text-align: center;
+}
+header#main-header div#main-header-landing .container .button-wrapper {
+  text-align: center;
+  padding: 6vh 0 3vh 0;
+}
+header#main-header div#main-header-landing .container .header-button {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 3vh 3vw;
+  margin: -1vh 0 0 -1vh;
+  -webkit-box-shadow: 1vh 1vh 0 #ffffff;
+  -moz-box-shadow: 1vh 1vh 0 #ffffff;
+  box-shadow: 1vh 1vh 0 #ffffff;
+}
+header#main-header div#main-header-landing .container .header-button:hover {
+  margin: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+header#main-header.full {
+  height: 100vh;
+}
+header#main-header.full div#main-header-landing {
+  height: 100vh;
+}
+header#main-header .impact {
+  height: 100%;
+}
+header#main-header .gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,1d3d86+100&amp;0+80,1+100 */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(74, 100, 158, 0) 80%, #1d3d86 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(80%, rgba(74, 100, 158, 0)), color-stop(100%, #1d3d86));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(74, 100, 158, 0) 80%, #1d3d86 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(74, 100, 158, 0) 80%, #1d3d86 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(74, 100, 158, 0) 80%, #1d3d86 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(74, 100, 158, 0) 80%, #1d3d86 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#1d3d86', GradientType=0);
+  /* IE6-9 */
+  position: absolute;
+  bottom: 0;
+  opacity: .3;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+#header-main-logo {
+  background-image: url("/images/logos/full.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  margin: 40px auto;
+  height: 30vh;
+  width: 400px;
+}
+footer#main-footer {
+  background: #1d3d86;
+  color: #fff;
+}
+footer#main-footer a {
+  color: #fff;
+}
+footer#main-footer a:hover {
+  color: #fff;
+}
+footer#main-footer h5 {
+  font-size: 24px;
+  padding-bottom: 1rem;
+}
+footer#main-footer .col {
+  padding: 20px;
+}
+footer#main-footer .col p {
+  line-height: 150%;
+  padding: .5rem 0;
+}
+footer#main-footer .col .my-log-temp {
+  float: right;
+}
+footer#main-footer .col .contacts li {
+  line-height: 150%;
+  padding: .5rem 0;
+}
+footer#main-footer .col .contacts li strong {
+  font-weight: bold;
+}
+footer#main-footer .col .footer-social-links {
+  font-size: 2rem;
+}
+footer#main-footer .col .footer-social-links a.social-link {
+  color: #fff;
+  display: inline-block;
+  padding: 1rem;
+  text-align: center;
+  height: 4rem;
+  width: 4rem;
+}
+footer#main-footer .col .footer-social-links a.social-link:hover {
+  background: #fff;
+  color: #1d3d86;
+}
+footer#main-footer .col img {
+  padding-top: 20px;
+}
+footer#main-footer #footer-map {
+  height: 60vh;
+  width: 100%;
+}

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>npi-tu.ru alpha</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="/css/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/index.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/swiper.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript" src="/js/vendor/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/js/header.js"></script>
+    <script type="text/javascript" src="/js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="/js/main-slider.js"></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript">
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 15,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(47.4165081, 40.0866668), // New York
+
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#1d3d86"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "lightness": "73"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "gamma": 0.01
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "saturation": -31
+                            },
+                            {
+                                "lightness": -33
+                            },
+                            {
+                                "weight": 2
+                            },
+                            {
+                                "gamma": 0.8
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "lightness": 30
+                            },
+                            {
+                                "saturation": 30
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "saturation": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "lightness": 20
+                            },
+                            {
+                                "saturation": -20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "lightness": 10
+                            },
+                            {
+                                "saturation": -30
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "saturation": "2"
+                            },
+                            {
+                                "gamma": "5.73"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "saturation": 25
+                            },
+                            {
+                                "lightness": 25
+                            },
+                            {
+                                "gamma": "2.70"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "gamma": "2.70"
+                            },
+                            {
+                                "lightness": "-100"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "lightness": "-100"
+                            },
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "lightness": -20
+                            }
+                        ]
+                    }
+                ]
+            };
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('footer-map');
+
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            // Let's also add a marker while we're at it
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(40.6700, -73.9400),
+                map: map,
+                title: 'Snazzy!'
+            });
+        }
+    </script>
+
+</head>
+<body>
+    <header id="main-header" class="full">
+        <nav id="main-header-nav">
+            <div class="impact">
+                <div class="container">
+                    <!--<div id="top-logo"></div>-->
+                    <ul class="lvl-0 header-nav-list">
+                        <li class="parent">
+                            <a href="#"><span class="borderland">Навигация</span></a>
+                            <div class="nesting-menu-wrapper">
+                                <div class="nesting-menu container">
+                                    <ul class="lvl-1">
+                                        <li>
+                                            Факультеты и институты
+                                            <ul class="lvl-2">
+                                                <li>Информация о факультетах</li>
+                                                <li>Информация об институтах</li>
+                                                <li>Филиалы</li>
+                                                <li>Представительства</li>
+                                                <li>Высшая школа управления</li>
+                                                <li>Авторизированный Центр Сертификации</li>
+                                                <li>Колледж</li>
+                                            </ul>
+                                        </li>
+                                        <li>Общий раздел</li>
+                                        <li>Учебный процесс</li>
+                                        <li>Наука</li>
+                                        <li>Закупки ЮРГПУ(НПИ)</li>
+                                        <li>Интернет ресурсы</li>
+                                        <li>Адреса. Реквизиты</li>
+                                        <li>Культурная жизнь</li>
+                                        <li>Платные услуги</li>
+                                        <li>Военно-патриотический центр «ПЛАМЯ»</li>
+                                        <li>Вакансии</li>
+                                    </ul>
+                                    <div class="nesting-sub container">
+                                        <div class="default-message">
+                                            <h3>Выберите пункт из списка слева</h3>
+                                        </div>
+                                        <!--<div class="nested-sub-block">
+                                            <ul class="lvl-2-full">
+                                                <li>Информация о факультетах</li>
+                                                <li>Информация об институтах</li>
+                                                <li>Филиалы</li>
+                                                <li>Представительства</li>
+                                                <li>Высшая школа управления</li>
+                                                <li>Авторизированный Центр Сертификации</li>
+                                                <li>Колледж</li>
+                                            </ul>
+                                        </div>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </li><li class="parent">
+                            <a><span class="borderland">Абитуриенту</span></a>
+                            <div class="nesting-menu-wrapper">
+                                <div class="nesting-menu container">
+                                    <div class="row">
+                                        <div class="col-md-4">Довузовская подготовка (CДШ)</div>
+                                        <div class="col-md-4">Для поступающих</div>
+                                        <div class="col-md-4">Заочное обучение</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li><li>
+                            <a><span class="borderland">Студенту</span></a>
+                        </li><li>
+                            <a><span class="borderland">Аспиранту</span></a>
+                        </li><li>
+                            <a><span class="borderland">Выпускнику</span></a>
+                        </li><li>
+                            <a><span class="borderland">Контакты</span></a>
+                        </li>
+                    </ul>
+                    <div id="main-header-modes">
+                        <div id="bright-mode" class="mode"><i class="fa fa-eye"></i></div>
+                        <div id="language-mode" class="mode">
+                            RU
+                            <ul>
+                                <li>RU</li>
+                                <li>EN</li>
+                                <li>DE</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-header-nav-bg"></div>
+        </nav>
+        <div id="main-header-landing">
+            <div class="gradient"></div>
+            <div class="impact">
+                <div class="container">
+                    <div id="header-main-logo"></div>
+                    <h1>Первый ВУЗ юга России!</h1>
+                    <h2>Основан в 1907 году</h2>
+
+                    <div class="button-wrapper">
+                        <div id="fast-button" class="header-button">Как стать студентом</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="main-slider">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h3>Вместе возродим память!</h3>
+                    <p>Председатель Попечительского совета ЮРГПУ(НПИ) имени М.И. Платова, первый заместитель председателя Комитета по промышленности Государственной Думы Федерального Собрания Российской Федерации В.В. Гутенев обратился к ученому совету ЮРГПУ(НПИ) с предложением об увековечивании памяти о подвигах сотрудников и студентов Алексеевского Донского политехнического института в Первой мировой войне.</p>
+                    <p>Первичная профсоюзная организация работников ЮРГПУ (НПИ) им. М.И.Платова поддерживает инициативу В.В. Гутенева и решение ученого совета университета и объявляет о создании благотворительного фонда по сбору добровольных пожертвований для изготовления и установки на территории университета памятного обелиска</p>
+
+                    <strong>«Донским политехникам - добровольцам Великой войны 1914-1918 гг.»</strong>
+                </div>
+                <div class="swiper-slide">
+                    <h3>Конкурс дизайн-проекта официального сайта ЮРГПУ(НПИ)</h3>
+                    <p>Администрация ЮРГПУ(НПИ) совместно с Первичной Профсоюзной Организацией Обучающихся ЮРГПУ(НПИ) проводит конкурс на разработку лучшего дизайн-проекта официального сайта ЮРГПУ(НПИ)</p>
+                    <p>Срок подачи конкурсных проектов с 16 сентября по 13 октября 2015 г.</p>
+                    <p>Дизайн-проект победителя конкурса станет основой обновленного официального сайта университета. Участников конкурса ждут призы и поощрения. Награждение победителей будет приурочено к празднованию Дня Университета.</p>
+                </div>
+                <div class="swiper-slide">
+                    <h3>Конкурс дизайн-проекта официального сайта ЮРГПУ(НПИ)</h3>
+                    <p>Администрация ЮРГПУ(НПИ) совместно с Первичной Профсоюзной Организацией Обучающихся ЮРГПУ(НПИ) проводит конкурс на разработку лучшего дизайн-проекта официального сайта ЮРГПУ(НПИ)</p>
+                    <p>Срок подачи конкурсных проектов с 16 сентября по 13 октября 2015 г.</p>
+                    <p>Дизайн-проект победителя конкурса станет основой обновленного официального сайта университета. Участников конкурса ждут призы и поощрения. Награждение победителей будет приурочено к празднованию Дня Университета.</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section id="main-buttons">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <section id="main-helper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info-block heading">
+                        <h3>Как стать студентом ЮРГПУ(НПИ)?</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-block">
+                        <div class="pic left"></div><div class="text">Довузовская подготовка (CДШ)</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-block">
+                        <div class="pic left"></div><div class="text">Для поступающих</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-block">
+                        <div class="pic left"></div><div class="text">Заочное обучение</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info-block heading">
+                        <h3>Учебный процесс</h3>
+                    </div>
+                    <div class="info-block filler">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-block">
+                        <div class="text left">Онлайн-расписаине</div><div class="pic"></div>
+                    </div>
+                    <div class="info-block">
+                        <div class="pic left"></div><div class="text">Студенческие олимпиады</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-block">
+                        <div class="text left">Успеваемость студентов</div><div class="pic"></div>
+                    </div>
+                    <div class="info-block">
+                        <div class="pic left"></div><div class="text">Стипендиальное обеспечение</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-block">
+                        <div class="text left">Факультеты</div><div class="pic"></div>
+                    </div>
+                    <div class="info-block">
+                        <div class="pic left"></div><div class="text">Профес<wbr>сиональные серти<wbr>фикаты</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info-block heading">
+                        <h3>Институт дополнительного образования</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-block">
+                        <div class="text left">Центр повышения Квалификации</div><div class="pic"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-block">
+                        <div class="text left">Второе высшее</div><div class="pic"></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info-block more">
+                        <h3>Все ссылки</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="main-content" class="home">
+        <div class="container">
+            <div class="row">
+                <div id="featured-links-wrapper" class="fibo-left">
+                    <h2>Полезные ссылки:</h2>
+                    <ul id="featured-links">
+                        <li class="featured-link temp-illumintati">
+                            <a href="#"><div class="overlay"><h5>Кафедра Иллюминатов</h5></div></a>
+                        </li><li class="featured-link  temp-cat">
+                            <a href="#"><div class="overlay"><h5>Институт благородных котят</h5></div></a>
+                        </li><li class="featured-link  temp-scincidae">
+                            <a href="#"><div class="overlay"><h5>Сцинковые для пацанов</h5></div></a>
+                        </li><li class="featured-link temp-illumintati">
+                            <a href="#"><div class="overlay"><h5>Кафедра Иллюминатов</h5></div></a>
+                        </li><li class="featured-link  temp-cat">
+                            <a href="#"><div class="overlay"><h5>Институт благородных котят</h5></div></a>
+                        </li><li class="featured-link  temp-scincidae">
+                            <a href="#"><div class="overlay"><h5>Сцинковые для пацанов</h5></div></a>
+                        </li><li class="featured-link temp-illumintati">
+                            <a href="#"><div class="overlay"><h5>Кафедра Иллюминатов</h5></div></a>
+                        </li><li class="featured-link  temp-cat">
+                            <a href="#"><div class="overlay"><h5>Институт благородных котят</h5></div></a>
+                        </li><li class="featured-link  temp-scincidae">
+                            <a href="#"><div class="overlay"><h5>Сцинковые для пацанов</h5></div></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fibo-right">
+                    <section id="main-news">
+                        <h2>Последние новости:</h2>
+                        <article>
+                            <div class="left">
+                                <div class="mileline"></div>
+                                <div class="date">01<small>окт.</small></div>
+                            </div>
+                            <div class="content">
+                               <!-- <div class="abs-wrp"><hr /></div>-->
+                                <header class="article-header"><h3>ЮРГПУ(НПИ) в ТОП-50 лучших вузов России по Техническим, естественнонаучным направлениям и точным наукам</h3></header>
+                                <p>С 22 по 29 сентября 2015 года в университете проводился отборочный (внутривузовский) тур международной студенческой Интернет-олимпиады по дисциплинам: «Русский язык», «История России», «Философия», «Правоведение» и «Социология». На призыв «Проверь свой интеллект средствами Интернет-олимпиад» в этом году откликнулось 179 студентов ЮРГПУ (НПИ). Это неравнодушные к качеству своего образования молодые люди, заранее планирующие свои карьерные стратегии и желающие проверить свои интеллектуальные возможности.</p>
+                                <footer class="article-footer"><a href="#" class="read-more">Читать далее...</a></footer>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="left">
+                                <div class="date">17<small>сен.</small></div>
+                            </div>
+                            <div class="content">
+                                <header class="article-header"><h3>Презентация механического факультета</h3></header>
+                                <p>С 22 по 29 сентября 2015 года в университете проводился отборочный (внутривузовский) тур международной студенческой Интернет-олимпиады по дисциплинам: «Русский язык», «История России», «Философия», «Правоведение» и «Социология». На призыв «Проверь свой интеллект средствами Интернет-олимпиад» в этом году откликнулось 179 студентов ЮРГПУ (НПИ). Это неравнодушные к качеству своего образования молодые люди, заранее планирующие свои карьерные стратегии и желающие проверить свои интеллектуальные возможности.</p>
+                                <footer class="article-footer"><a href="#" class="read-more">Читать далее...</a></footer>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="left">
+                                <div class="date">13<small>сен.</small></div>
+                            </div>
+                            <div class="content">
+                                <header class="article-header"><h3>Слёт активной молодёжи «Готов к труду и обороне»</h3></header>
+                                <p>С 22 по 29 сентября 2015 года в университете проводился отборочный (внутривузовский) тур международной студенческой Интернет-олимпиады по дисциплинам: «Русский язык», «История России», «Философия», «Правоведение» и «Социология». На призыв «Проверь свой интеллект средствами Интернет-олимпиад» в этом году откликнулось 179 студентов ЮРГПУ (НПИ). Это неравнодушные к качеству своего образования молодые люди, заранее планирующие свои карьерные стратегии и желающие проверить свои интеллектуальные возможности.</p>
+                                <footer class="article-footer"><a href="#" class="read-more">Читать далее...</a></footer>
+                            </div>
+                        </article>
+                        <article class="more-news">
+                            <div class="left">
+                                <div class="more-news"><i class="fa fa-chevron-circle-down"></i></div>
+                            </div>
+                            <div class="content">
+                                <hr />
+                                <a href="#">Читать архив новостей</a>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-4">
+                    <h5>Контакты</h5>
+                    <ul class="contacts">
+                        <li><strong>Адрес</strong>: 346428, Ростовская обл., г. Новочеркасск, ул. Просвещения, 132</li>
+                        <li><strong>E-mail</strong>: <a href="mailto:pressa_npi@mail.ru">pressa_npi@mail.ru</a></li>
+                        <li><strong>Телефон</strong>: <a href="tel:88635255055">8(8635)25-50-55</a></li>
+                    </ul>
+                </div>
+                <div class="col col-md-4">
+                    <h5>Инфо</h5>
+                    <p>© 2015 Южно-Российский государственный политехнический университет (Новочеркасский политехнический институт) имени М.И. Платова</p>
+                </div>
+                <div class="col col-md-4">
+                    <h5>О сайте</h5>
+                    <p>Ищите нас в социальных сетях:</p>
+                    <div class="footer-social-links">
+                        <a href="#" class="social-link"><i class="fa fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fa fa-odnoklassniki"></i></a>
+                        <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <img class="my-log-temp" src="/images/me.png" />
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <div id="footer-map"></div>
+        </div>
+    </footer>
+</body>
+</html>

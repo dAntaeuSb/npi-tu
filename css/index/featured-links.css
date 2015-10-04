@@ -1,0 +1,10 @@
+ul#featured-links li.featured-link {
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: inline-block;
+  width: 50%;
+}
+.temp-illumintati {
+  background: url("/images/banners/illuminati.png");
+}

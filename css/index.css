@@ -1,0 +1,279 @@
+.swiper-container {
+  width: 100%;
+  height: 60vh;
+  margin: 20px auto;
+}
+.swiper-slide {
+  background: #fff;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px 20px;
+  -webkit-transition: opacity ease 0.5s;
+  -moz-transition: opacity ease 0.5s;
+  -o-transition: opacity ease 0.5s;
+  transition: opacity ease 0.5s;
+}
+@media (min-width: 768px) {
+  .swiper-slide {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .swiper-slide {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .swiper-slide {
+    max-width: 1170px;
+  }
+}
+.swiper-slide h3 {
+  color: #1d3d86;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.swiper-slide p {
+  font-size: 1.2rem;
+  padding: .8rem 0;
+}
+.swiper-slide.swiper-slide-prev,
+.swiper-slide.swiper-slide-next {
+  opacity: .5;
+}
+#main-helper .col-md-4,
+#main-helper .col-md-3 {
+  padding: 0;
+}
+#main-helper .row {
+  margin: 0;
+}
+#main-helper .info-block {
+  background: url("/images/banners/illuminati.png");
+  background-size: cover;
+  height: 120px;
+  overflow: hidden;
+  width: 100%;
+}
+#main-helper .info-block .pic {
+  float: left;
+  color: #1d3d86;
+  height: 100%;
+  width: 50%;
+  -webkit-transition: background 0.25s ease;
+  -moz-transition: background 0.25s ease;
+  -o-transition: background 0.25s ease;
+  transition: background 0.25s ease;
+}
+#main-helper .info-block .text {
+  background: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  color: #1d3d86;
+  padding: 20px;
+  height: 100%;
+  width: 50%;
+  word-wrap: break-word;
+  -webkit-transition: background 0.25s ease;
+  -moz-transition: background 0.25s ease;
+  -o-transition: background 0.25s ease;
+  transition: background 0.25s ease;
+}
+#main-helper .info-block .text.left {
+  text-align: right;
+}
+#main-helper .info-block.heading {
+  background: #fff;
+  border-right: 5px solid #1d3d86;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main-helper .info-block.heading h3 {
+  font-size: 2rem;
+}
+#main-helper .info-block.more {
+  background: #1d3d86;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main-helper .info-block.more h3 {
+  font-size: 2rem;
+}
+#main-helper .info-block.filler {
+  background: #fff;
+  border-right: 5px solid #1d3d86;
+  padding: 20px;
+}
+#main-helper .info-block:hover .pic {
+  background: rgba(29, 61, 134, 0.75);
+}
+#main-helper .info-block:hover .text {
+  background: #fff;
+}
+#featured-links-wrapper {
+  padding: 20px 0;
+}
+#featured-links-wrapper h2 {
+  font-size: 2rem;
+  padding: 0 0 0 20px;
+}
+ul#featured-links {
+  padding: 20px 0 40px 20px;
+}
+ul#featured-links li.featured-link {
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  float: left;
+  display: inline-block;
+  height: 160px;
+  width: 50%;
+}
+ul#featured-links li.featured-link a:hover {
+  text-decoration: none;
+}
+ul#featured-links li.featured-link .overlay {
+  background: rgba(29, 61, 134, 0.7);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  opacity: .5;
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul#featured-links li.featured-link .overlay:hover {
+  opacity: 1;
+}
+.temp-illumintati {
+  background: url("/images/banners/illuminati.png");
+}
+.temp-cat {
+  background: url("/images/banners/cat.jpg");
+}
+.temp-scincidae {
+  background: url("/images/banners/scincidae.JPG");
+}
+#main-news {
+  padding: 20px;
+}
+#main-news h2 {
+  font-size: 2rem;
+  padding: 0;
+}
+#main-news article {
+  border-bottom: 1px solid #999;
+  display: table-row;
+  position: relative;
+  vertical-align: baseline;
+  width: 100%;
+}
+#main-news article .left {
+  display: table-cell;
+  vertical-align: top;
+  padding: 10px;
+  height: 100%;
+  width: 100px;
+}
+#main-news article .left .date {
+  background: #fff;
+  text-align: center;
+  font-size: 2.4rem;
+  padding-top: 12px;
+  height: 80px;
+  width: 80px;
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+#main-news article .left .date small {
+  display: block;
+  font-size: 1rem;
+}
+#main-news article .left .more-news {
+  background: #fff;
+  color: #1d3d86;
+  border: solid 6px #1d3d86;
+  text-align: center;
+  font-size: 2.4rem;
+  padding-top: 14px;
+  height: 80px;
+  width: 80px;
+  -webkit-border-radius: 50%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 50%;
+  -moz-background-clip: padding;
+  border-radius: 50%;
+  background-clip: padding-box;
+}
+#main-news article .left .more-news small {
+  display: block;
+  font-size: 1rem;
+}
+#main-news article .left .mileline {
+  background: #eee;
+  position: absolute;
+  margin-left: 37px;
+  height: 100%;
+  width: 6px;
+  z-index: -1;
+}
+#main-news article .content {
+  display: table-cell;
+  padding: 10px 20px;
+  position: relative;
+  text-align: justify;
+  text-indent: 1rem;
+  line-height: 125%;
+  vertical-align: top;
+  width: 100%;
+}
+#main-news article .content hr {
+  background: #eee;
+  margin: 36px 0 0.6rem -73px;
+  position: relative;
+  height: 6px;
+  z-index: -1;
+}
+#main-news article .content header.article-header {
+  padding: 1.4rem 3rem 1.4rem 0;
+  position: relative;
+  margin: 0 0 .6rem 0;
+  text-indent: 0;
+}
+#main-news article .content header.article-header h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 100%;
+}
+#main-news article .content footer.article-footer {
+  border-bottom: 1px solid #aaa;
+  background: #eee;
+  margin-top: 10px;
+  padding: 10px;
+}
+#main-news article:after {
+  clear: both;
+  font-size: 0;
+  overflow: hidden;
+}

@@ -1,0 +1,95 @@
+#main-story{
+  padding: 20px 0;
+
+  .person{
+    display: block;
+    height: 80px;
+    margin-bottom: 20px;
+
+    &:before{
+      content: " ";
+      display: table;
+    }
+
+    &:after{
+      clear: both;
+    }
+
+    .photo{
+      float: left;
+      position: relative;
+      min-height: 1px;
+      height: 80px;
+      width: 80px;
+
+      img{
+        background-size: cover;
+        background-position: center;
+        margin: 0 20px 10px 0;
+        height: 80px;
+        width: 80px;
+
+        .lh-border-radius(50%);
+      }
+    }
+
+    h3{
+      float: left;
+      position: relative;
+      min-height: 1px;
+      font-size: 2rem;
+      padding-top: .8rem;
+    }
+
+    small{
+      position: relative;
+      min-height: 1px;
+      float: left;
+    }
+  }
+
+  .text{
+    color: #777;
+    display: block;
+    float: none;
+  }
+
+  .button.more{
+    border: 1px solid @main;
+    color: @main;
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    max-width: 240px;
+
+    &:hover{
+      background: @main;
+      color: #fff;
+    }
+  }
+}
+
+#feature-magazine{
+  background: #fafafa;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  max-height: 500px;
+  max-width: 300px;
+
+  .lh-border-radius(2px);
+  .lh-box-shadow(0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2));
+
+  .magazine-preview{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  p{
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 1rem;
+  }
+}

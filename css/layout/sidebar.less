@@ -1,0 +1,105 @@
+aside#sidebar{
+  background: #fafafa;
+  position: fixed;
+  float: left;
+  overflow-y: scroll;
+  height: 100%;
+  width: 260px;
+
+  display: none;
+
+  #main-sidebar-search{
+    background: @main;
+    color: #fff;
+    height: 60px;
+
+    .lh-box-shadow(inset 0 -3px rgba(0,0,0,.5));
+  }
+
+  #main-sidebar-search-box{
+    background: none;
+    border: none;
+    padding: 15px 20px;
+    height: 56px;
+    width: 100%;
+  }
+}
+
+
+nav#main-sidebar-nav{
+  .sidebar-nav-list{
+    & > li{
+      border-top: 1px solid lighten(#fafafa, 10%);
+      border-bottom: 1px solid darken(#fafafa, 10%);
+
+      &:hover{
+        background: #eee;
+        border-top: 1px solid lighten(#eee, 10%);
+        border-bottom: 1px solid darken(#eee, 10%);
+      }
+
+      & > a{
+        display: block;
+        padding: 14px 20px;
+
+        &:after{
+          content: "\f105";
+          display: inline-block;
+          float: right;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          padding: 0 0 0 14px;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        &:hover{
+          text-decoration: none;
+        }
+      }
+
+      &.parent > a{
+        &:after{
+          content: "\f107";
+        }
+      }
+
+      .nesting-menu-wrapper{
+        //display: none;
+
+        .nesting-menu{
+          .lvl-1{
+            & > li{
+              a{
+                border-top: 1px solid lighten(#fafafa, 10%);
+                border-bottom: 1px solid darken(#fafafa, 10%);
+                display: block;
+                padding: 14px 20px 14px 40px;
+              }
+
+              .lvl-2{
+                a{
+                  border-top: 1px solid lighten(#fafafa, 10%);
+                  border-bottom: 1px solid darken(#fafafa, 10%);
+                  display: block;
+                  padding: 14px 20px 14px 60px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+#page{
+  background: #fff;
+  position: relative;
+  margin-left: 260px;
+  z-index: 5;
+
+  .lh-box-shadow(0 0 40px rgba(0,0,0,.5));
+}*/

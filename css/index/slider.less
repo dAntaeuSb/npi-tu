@@ -7,7 +7,7 @@
   background: #fff;
   margin-right: auto;
   margin-left: auto;
-  padding: 40px 20px;
+  padding: 40px 60px;
 
   .lh-transition(opacity ease .5s);
 
@@ -35,5 +35,44 @@
 
   &.swiper-slide-prev, &.swiper-slide-next{
     opacity: .5;
+  }
+}
+
+#main-fast-contacts{
+  background: @main;
+  color: #fff;
+  padding: 20px;
+  min-height: 60vh;
+
+  h1{
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  a{
+    color: #fff;
+
+    &.phone{
+      display: block;
+      font-size: 1.8rem;
+      padding: .6rem 0;
+    }
+  }
+
+  .phone-title{
+    font-size: 1rem;
+    display: block;
+  }
+
+  .reception{
+    background: darken(@main, 10%);
+    border: 1px solid #fff;
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-top: .5rem;
+
+    .lh-border-radius(5px);
   }
 }

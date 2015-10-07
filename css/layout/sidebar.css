@@ -1,0 +1,10 @@
+aside#sidebar {
+  background: #fafafa;
+  height: 100%;
+  position: fixed;
+  float: left;
+  width: 260px;
+}
+#page {
+  margin-left: 260px;
+}

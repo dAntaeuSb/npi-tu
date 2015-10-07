@@ -130,6 +130,16 @@ table {
 body {
   background: #fff;
 }
+.no-float {
+  float: none;
+}
+.table {
+  display: table-row;
+}
+.cell {
+  display: table-cell;
+  float: none;
+}
 a {
   color: #1d3d86;
 }
@@ -143,11 +153,25 @@ a:visited {
   min-height: 1px;
   width: 38.2%;
 }
+@media (max-width: 990px) {
+  .fibo-left {
+    float: none;
+    position: static;
+    width: 100%;
+  }
+}
 .fibo-right {
   position: relative;
   float: left;
   min-height: 1px;
   width: 61.8%;
+}
+@media (max-width: 990px) {
+  .fibo-right {
+    float: none;
+    position: static;
+    width: 100%;
+  }
 }
 .abs-wrp {
   position: absolute;

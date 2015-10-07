@@ -1,7 +1,8 @@
 header#main-header {
   background-color: #fff;
-  background-image: url('/images/header.jpg');
+  background-image: url('/images/photos/main.jpg');
   background-size: cover;
+  background-position: center;
   font-family: 'Roboto', sans-serif;
   position: relative;
   overflow: hidden;
@@ -10,8 +11,10 @@ header#main-header nav#main-header-nav {
   background-color: #1d3d86;
   background-position: center;
   background-size: cover;
+  box-sizing: border-box;
   font-weight: 300;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 1000;
 }
@@ -24,7 +27,7 @@ header#main-header nav#main-header-nav #main-header-nav-bg {
   height: 100%;
   opacity: .8;
   z-index: -1;
-  background-image: url('/images/header-blured.jpg');
+  background-image: url('/images/photos/blured/main.jpg');
   background-repeat: no-repeat;
 }
 header#main-header nav#main-header-nav > .impact > .container {
@@ -44,6 +47,11 @@ header#main-header nav#main-header-nav .header-nav-list {
   list-style: none;
   margin: 0;
 }
+@media (max-width: 700px) {
+  header#main-header nav#main-header-nav .header-nav-list {
+    display: none;
+  }
+}
 header#main-header nav#main-header-nav .header-nav-list > li {
   display: inline-block;
   font-size: 17px;
@@ -57,25 +65,25 @@ header#main-header nav#main-header-nav .header-nav-list > li:hover,
 header#main-header nav#main-header-nav .header-nav-list > li.active {
   background: #fff;
 }
-header#main-header nav#main-header-nav .header-nav-list > li:hover a,
-header#main-header nav#main-header-nav .header-nav-list > li.active a {
+header#main-header nav#main-header-nav .header-nav-list > li:hover > a,
+header#main-header nav#main-header-nav .header-nav-list > li.active > a {
   color: #1d3d86;
 }
-header#main-header nav#main-header-nav .header-nav-list > li a {
+header#main-header nav#main-header-nav .header-nav-list > li > a {
   color: #fff;
   display: block;
   padding: 0 20px;
 }
-header#main-header nav#main-header-nav .header-nav-list > li a:hover {
+header#main-header nav#main-header-nav .header-nav-list > li > a:hover {
   text-decoration: none;
 }
-header#main-header nav#main-header-nav .header-nav-list > li a:hover .borderland {
+header#main-header nav#main-header-nav .header-nav-list > li > a:hover .borderland {
   border-bottom: 3px solid #1d3d86;
 }
-header#main-header nav#main-header-nav .header-nav-list > li a.active .borderland {
+header#main-header nav#main-header-nav .header-nav-list > li > a.active .borderland {
   border-bottom: 3px solid #1d3d86;
 }
-header#main-header nav#main-header-nav .header-nav-list > li a .borderland {
+header#main-header nav#main-header-nav .header-nav-list > li > a .borderland {
   display: block;
   padding: 20px 0;
   border-bottom: 3px solid #fff;
@@ -90,19 +98,31 @@ header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapp
 }
 header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu {
   background: #fff;
-  min-height: 400px;
+  min-height: 300px;
   padding: 0;
   overflow: hidden;
   max-height: 80vh;
-  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  border-bottom-left-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius-bottomright: 2px;
+  -moz-background-clip: padding;
+  border-bottom-right-radius: 2px;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu ul.lvl-1 {
   background: #eee;
   padding: .3rem 0;
   float: left;
   overflow-y: scroll;
+  position: relative;
+  height: 100%;
+  max-height: 80vh;
   max-width: 20%;
 }
 header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu ul.lvl-1 li {
@@ -119,7 +139,11 @@ header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapp
   display: none;
 }
 header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu .nesting-sub {
-  float: right;
+  margin-left: 20%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  max-height: 80vh;
   width: 80%;
   -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
@@ -134,13 +158,87 @@ header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapp
   text-align: center;
   height: 460px;
 }
+header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu .nesting-sub .nested-sub-block {
+  position: absolute;
+  height: 100%;
+}
+header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu .nesting-sub .lvl-2-full {
+  padding: .3rem 0;
+}
+header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu .nesting-sub .lvl-2-full li {
+  color: #1d3d86;
+  display: block;
+  position: relative;
+  padding: .7rem 1rem;
+}
+header#main-header nav#main-header-nav .header-nav-list > li .nesting-menu-wrapper .nesting-menu .nesting-sub .lvl-2-full li:hover {
+  background: #fff;
+  z-index: 5;
+}
 header#main-header nav#main-header-nav .header-nav-list > li.parent:hover .nesting-menu-wrapper,
 header#main-header nav#main-header-nav .header-nav-list > li.parent.active .nesting-menu-wrapper {
   display: block;
 }
+header#main-header nav#main-header-nav #header-nav-open-button-wrap {
+  float: left;
+  padding: .8rem 20px .8rem 0;
+}
+@media (min-width: 701px) {
+  header#main-header nav#main-header-nav #header-nav-open-button-wrap {
+    display: none;
+  }
+}
+header#main-header nav#main-header-nav #header-nav-open-button {
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  float: left;
+  padding: .4rem .7rem;
+  margin-left: .7rem;
+  -webkit-border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 5px;
+  -moz-background-clip: padding;
+  border-radius: 5px;
+  background-clip: padding-box;
+}
+header#main-header nav#main-header-nav #header-search {
+  color: #fff;
+  float: right;
+  font-size: 1.6rem;
+}
+@media (max-width: 700px) {
+  header#main-header nav#main-header-nav #header-search {
+    display: none;
+  }
+}
+header#main-header nav#main-header-nav #header-search i {
+  padding: 16px 0 17px 0;
+  margin-left: -40px;
+}
+header#main-header nav#main-header-nav #header-search-input {
+  background: bottom left linear-gradient(#ffffff, #ffffff) no-repeat, bottom center linear-gradient(#ffffff, #ffffff) repeat-x, bottom right linear-gradient(#ffffff, #ffffff) no-repeat;
+  background-size: 1px 6px, 1px 1px, 1px 6px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  font-size: 17px;
+  padding: 20px 60px 15px 20px;
+  width: 240px;
+}
+header#main-header nav#main-header-nav #header-search-input:focus {
+  outline: none;
+  background: bottom left linear-gradient(#ed7d1c, #ed7d1c) no-repeat, bottom center linear-gradient(#ed7d1c, #ed7d1c) repeat-x, bottom right linear-gradient(#ed7d1c, #ed7d1c) no-repeat;
+  border-bottom: 2px solid #ED7D1C;
+}
+@media screen and (max-width: 1200px) {
+  header#main-header nav#main-header-nav #header-search-input {
+    display: none;
+  }
+}
 header#main-header nav#main-header-nav #main-header-modes {
   float: right;
-  padding: .8rem 0;
+  padding: .8rem 20px .8rem 0;
 }
 header#main-header nav#main-header-nav #main-header-modes .mode {
   border: 1px solid #fff;
@@ -229,6 +327,12 @@ header#main-header div#main-header-landing .container h2 {
   font-weight: 300;
   text-align: center;
 }
+header#main-header div#main-header-landing .container p {
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 50%;
+}
 header#main-header div#main-header-landing .container .button-wrapper {
   text-align: center;
   padding: 6vh 0 3vh 0;
@@ -288,7 +392,78 @@ header#main-header .gradient {
   display: block;
   margin: 40px auto;
   height: 30vh;
-  width: 400px;
+}
+@media (max-width: 992px) {
+  #header-nav-aspirant,
+  #header-nav-graduate {
+    display: none !important;
+  }
+}
+aside#sidebar {
+  background: #fafafa;
+  position: fixed;
+  float: left;
+  overflow-y: scroll;
+  height: 100%;
+  width: 260px;
+  display: none;
+}
+aside#sidebar #main-sidebar-search {
+  background: #1d3d86;
+  color: #fff;
+  height: 60px;
+  -webkit-box-shadow: inset 0 -3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 -3px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 -3px rgba(0, 0, 0, 0.5);
+}
+aside#sidebar #main-sidebar-search-box {
+  background: none;
+  border: none;
+  padding: 15px 20px;
+  height: 56px;
+  width: 100%;
+}
+nav#main-sidebar-nav .sidebar-nav-list > li {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #e1e1e1;
+}
+nav#main-sidebar-nav .sidebar-nav-list > li:hover {
+  background: #eee;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #d5d5d5;
+}
+nav#main-sidebar-nav .sidebar-nav-list > li > a {
+  display: block;
+  padding: 14px 20px;
+}
+nav#main-sidebar-nav .sidebar-nav-list > li > a:after {
+  content: "\f105";
+  display: inline-block;
+  float: right;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  padding: 0 0 0 14px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+nav#main-sidebar-nav .sidebar-nav-list > li > a:hover {
+  text-decoration: none;
+}
+nav#main-sidebar-nav .sidebar-nav-list > li.parent > a:after {
+  content: "\f107";
+}
+nav#main-sidebar-nav .sidebar-nav-list > li .nesting-menu-wrapper .nesting-menu .lvl-1 > li a {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #e1e1e1;
+  display: block;
+  padding: 14px 20px 14px 40px;
+}
+nav#main-sidebar-nav .sidebar-nav-list > li .nesting-menu-wrapper .nesting-menu .lvl-1 > li .lvl-2 a {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #e1e1e1;
+  display: block;
+  padding: 14px 20px 14px 60px;
 }
 footer#main-footer {
   background: #1d3d86;
@@ -342,4 +517,7 @@ footer#main-footer .col img {
 footer#main-footer #footer-map {
   height: 60vh;
   width: 100%;
+}
+#page {
+  overflow: hidden;
 }

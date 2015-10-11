@@ -1,12 +1,11 @@
 aside#sidebar{
   background: #fafafa;
   position: fixed;
+  display: none;
   float: left;
   overflow-y: scroll;
   height: 100%;
   width: 260px;
-
-  display: none;
 
   #main-sidebar-search{
     background: @main;
@@ -24,7 +23,6 @@ aside#sidebar{
     width: 100%;
   }
 }
-
 
 nav#main-sidebar-nav{
   .sidebar-nav-list{
@@ -70,26 +68,56 @@ nav#main-sidebar-nav{
 
         .nesting-menu{
           .lvl-1{
+            display: none;
+
             & > li{
               a{
                 border-top: 1px solid lighten(#fafafa, 10%);
                 border-bottom: 1px solid darken(#fafafa, 10%);
                 display: block;
-                padding: 14px 20px 14px 40px;
+                padding: 14px 20px 14px 30px;
               }
 
               .lvl-2{
+                display: none;
+
                 a{
                   border-top: 1px solid lighten(#fafafa, 10%);
                   border-bottom: 1px solid darken(#fafafa, 10%);
                   display: block;
-                  padding: 14px 20px 14px 60px;
+                  padding: 14px 20px 14px 40px;
                 }
               }
             }
           }
         }
       }
+    }
+  }
+}
+
+@media (min-width: 701px) {
+  aside#sidebar{
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  body.sidebar{
+    overflow: hidden;
+
+    aside#sidebar{
+      display: block;
+    }
+
+    #page{
+      background: #fff;
+      position: relative;
+      margin-left: 260px;
+      z-index: 5;
+      //min-width: 320px;
+
+      .lh-box-shadow(0 0 40px rgba(0,0,0,.5));
     }
   }
 }
@@ -103,3 +131,4 @@ nav#main-sidebar-nav{
 
   .lh-box-shadow(0 0 40px rgba(0,0,0,.5));
 }*/
+

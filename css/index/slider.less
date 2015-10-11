@@ -2,6 +2,16 @@
   width: 100%;
   height: 60vh;
   margin: 20px auto;
+
+  @media (max-width: 401px) {
+    .swiper-button-next{
+      right: 0;
+    }
+
+    .swiper-button-prev{
+      left: 0;
+    }
+  }
 }
 .swiper-slide {
   background: #fff;
@@ -36,10 +46,26 @@
   &.swiper-slide-prev, &.swiper-slide-next{
     opacity: .5;
   }
+
+  @media (max-width: 401px) {
+    padding: 10px 0;
+
+    h3{
+      color: @main;
+      text-align: center;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    p{
+      font-size: 1rem;
+      padding: .2rem 0;
+    }
+  }
 }
 
 #main-fast-contacts{
-  background: @main;
+  background: @main url('/images/contact-bg.png') top no-repeat;
   color: #fff;
   padding: 20px;
   min-height: 60vh;

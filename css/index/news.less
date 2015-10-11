@@ -18,6 +18,9 @@
     width: 100%;
 
     .left{
+      background-image: url("/images/mileline.png");
+      background-position: top;
+      background-repeat: repeat-y;
       display: table-cell;
       vertical-align: top;
       padding: 10px;
@@ -64,15 +67,6 @@
           font-size: 1rem;
         }
       }
-
-      .mileline{
-        background: #eee;
-        position: absolute;
-        margin-left: 37px;
-        height: 100%;
-        width: 6px;
-        z-index: -1;
-      }
     }
 
     .content{
@@ -95,6 +89,10 @@
         position: relative;
         height: 6px;
         z-index: -1;
+      }
+
+      .news-header-link:hover{
+        text-decoration: none;
       }
 
       header.article-header{
@@ -138,6 +136,7 @@
 
             h3{
               color: @main;
+              text-decoration: none;
             }
           }
         }

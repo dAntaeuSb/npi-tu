@@ -5,60 +5,100 @@
  * Proprietary and confidential
  */
 
-function Header(width, height) {
-    var imgsize = [];
-    var width = width;
-    var height = height;
+function Header() {
+    var _self = this;
 
-    if ( arguments.callee._singletonInstance )
-        return arguments.callee._singletonInstance;
-    arguments.callee._singletonInstance = this;
+    this.DOM = {
+        bg: "#main-header-nav-bg",
+        gradient: "#main-header-landing .gradient",
+        links: "#main-heder-quicklinks"
+    };
 
-    this.scroll = function(h) {
-        var p = h / (height - 57);
+    this.dim = {
+        width: null,
+        height: null
+    };
+
+    this.resize = function(w, h) {
+        this.dim.width = w;
+        this.dim.height = h;
+    };
+
+    this.scroll = function(t, l) {
+        var p = t / (_self.dim.height - 57);
 
         if(p < 1) {
-            $("#main-header-nav-bg").css({
-                "background-size": width + "px auto",
-                "background-position": "50% " + (-h) + "px"
+            _self.DOM.bg.css({
+                "margin-top": (-t) + "px"
             });
 
             if(p > .8) {
-                $("#main-header-nav-bg").css({
+                _self.DOM.links.css({
+                    opacity: 1 - (p - .5) * 2,
+                    marginBottom: -87 * ((p - .5) * 2)
+                });
+                _self.DOM.bg.css({
                     opacity: (1 - ((p - .8) * 5)) *.8
                 });
-                $("#main-header-landing .gradient").css({
+                _self.DOM.gradient.css({
                     opacity: ((p - .8) * 5)
                 });
-            } else {
-                $("#main-header-nav-bg").css({
+            } else if (p > .5) {
+                _self.DOM.links.css({
+                    opacity: 1 - (p - .5) * 2,
+                    marginBottom: -87 * ((p - .5) * 2)
+                });
+                _self.DOM.bg.css({
                     opacity: .8
                 });
-                $("#main-header-landing .gradient").css({
+                _self.DOM.gradient.css({
+                    opacity: 0
+                });
+            } else {
+                _self.DOM.links.css({
+                    opacity: 1,
+                    marginBottom: 0
+                });
+                _self.DOM.bg.css({
+                    opacity: .8
+                });
+                _self.DOM.gradient.css({
                     opacity: 0
                 });
             }
         } else {
-            $("#main-header-nav-bg").css({
+            _self.DOM.links.css({
+                opacity: 0,
+                marginBottom: -87
+            });
+            _self.DOM.bg.css({
                 opacity: 0
             });
-            $("#main-header-landing .gradient").css({
+            _self.DOM.gradient.css({
                 opacity: 1
             });
         }
+    };
 
-        /*$("#main-header").css({
-            "background-size": width + "px auto",
-            "background-position": "50% " + p + "px"
-        });*/
-    }
+    document.addEventListener("DOMContentLoaded", function(e) {
+        for(var _node in _self.DOM) {
+            _self.DOM[_node] = $(_self.DOM[_node]);
+        }
+
+        document.addEventListener('scroll', function(e) {
+            _self.scroll($(window).scrollTop(), $(window).scrollLeft());
+        });
+
+        window.addEventListener('resize', function(e) {
+            _self.resize($(window).width(), $(window).height());
+        });
+
+        _self.resize($(window).width(), $(window).height());
+        _self.scroll($(window).scrollLeft(), $(window).scrollTop());
+    });
+
+    return this;
 }
 
-$(document).ready(function() {
-    var d = {w: $(window).width(), h: $(window).height()};
-    var header = new Header(d.w, d.h);
-
-    $(window).scroll(function(e) {
-        header.scroll($(window).scrollTop());
-    });
-});
+var header = new Header();
+header.__proto__ = module;

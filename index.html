@@ -11,7 +11,9 @@
     <link href="/css/swiper.css" rel="stylesheet" type="text/css" media="all">
     <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
     <script type="text/javascript" src="/js/vendor/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/js/moduleman.js"></script>
     <script type="text/javascript" src="/js/header.js"></script>
+    <script type="text/javascript" src="/js/nav.js"></script>
     <script type="text/javascript" src="/js/swiper/swiper.min.js"></script>
     <script type="text/javascript" src="/js/main-slider.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&language=ru"></script>
@@ -86,26 +88,24 @@
                                 <div class="nesting-menu-wrapper">
                                     <div class="nesting-menu container">
                                         <ul class="lvl-1">
-                                            <li>
-                                                Факультеты и институты
-                                            </li>
-                                            <li>Общий раздел</li>
-                                            <li>Учебный процесс</li>
-                                            <li>Наука</li>
-                                            <li>Закупки ЮРГПУ(НПИ)</li>
-                                            <li>Интернет ресурсы</li>
-                                            <li>Адреса. Реквизиты</li>
-                                            <li>Культурная жизнь</li>
-                                            <li>Платные услуги</li>
-                                            <li>Военно-патриотический центр «ПЛАМЯ»</li>
-                                            <li>Вакансии</li>
-                                            <li>Сведения об образовательном учреждении</li>
+                                            <li id="pointer-header-nav">Факультеты и институты</li>
+                                            <li id="pointer-header-random">Общий раздел</li>
+                                            <li id="pointer-header-edproc">Учебный процесс</li>
+                                            <li id="pointer-header-science">Наука</li>
+                                            <li id="pointer-header-invoices">Закупки ЮРГПУ(НПИ)</li>
+                                            <li id="pointer-header-resources">Интернет ресурсы</li>
+                                            <li id="pointer-header-addresses">Адреса. Реквизиты</li>
+                                            <li id="pointer-header-culture">Культурная жизнь</li>
+                                            <li id="pointer-header-paid">Платные услуги</li>
+                                            <li id="pointer-header-patriots">Военно-патриотический центр «ПЛАМЯ»</li>
+                                            <li id="pointer-header-hire">Вакансии</li>
+                                            <li id="pointer-header-info">Сведения об образовательном учреждении</li>
                                         </ul>
                                         <div class="nesting-sub container">
                                             <!--<div class="default-message">
                                                 <h3>Выберите пункт из списка слева</h3>
                                             </div>-->
-                                            <div class="nested-sub-block">
+                                            <div id="nested-header-nav" class="nested-sub-block">
                                                 <ul class="lvl-2-full">
                                                     <li><a href="/index.php?id=27" title="Информация о факультетах" class="subnavi-link">Информация о факультетах</a></li>
                                                     <li><a href="/index.php?id=1993" title="Информация об институтах" class="subnavi-link">Информация об институтах</a></li>
@@ -116,7 +116,7 @@
                                                     <li class="last"><a href="http://gtc.npi-tu.ru/" title="Колледж" class="subnavi-link">Колледж</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="nested-sub-block">
+                                            <div id="nested-header-random" class="nested-sub-block">
                                                 <ul class="lvl-2-full">
                                                     <li><a href="/index.php?id=35" title="Руководство" class="subnavi-link">Руководство</a></li>
                                                     <li><a href="/index.php?id=36" title="Ученый совет" class="subnavi-link">Ученый совет</a></li>
@@ -129,7 +129,7 @@
                                                     <li class="last"><a href="/index.php?id=42" title="Документы">Документы</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="nested-sub-block">
+                                            <div id="nested-header-edproc" class="nested-sub-block">
                                                 <ul class="lvl-2-full">
                                                     <li><a href="/index.php?id=1804" title="Учебно-методическое управление" class="subnavi-link">Учебно-методическое управление</a></li>
                                                     <li><a href="/index.php?id=1806" title="Уровни (ступени) образования" class="subnavi-link">Уровни (ступени) образования</a></li>
@@ -142,14 +142,14 @@
                                                     <li class="last"><a href="/index.php?id=3208" title="Об условиях обучения инвалидов и лиц с ограниченными возможностями здоровья" class="subnavi-link">Об условиях обучения инвалидов и лиц с ограниченными возможностями здоровья</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="nested-sub-block">
+                                            <div id="nested-header-invoices" class="nested-sub-block">
                                                 <ul class="lvl-2-full">
                                                     <li><a href="/index.php?id=73" title="Документы для заявок" class="subnavi-link">Документы для заявок</a></li>
                                                     <li><a href="/index.php?id=74" title="Извещения о заказах " class="subnavi-link">Извещения о заказах </a></li>
                                                     <li class="last"><a href="/index.php?id=2527" title="Обучающий материал" class="subnavi-link">Обучающий материал</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="nested-sub-block">
+                                            <div id="nested-header-resources" class="nested-sub-block">
                                                 <ul class="lvl-2-full">
                                                     <li><a href="http://www.npi-tu.ru/index.php?id=1837" title="Платовская казачья страничка" class="subnavi-link">Платовская казачья страничка</a></li>
                                                     <li><a href="http://catalog.npi-tu.ru/index.php" title="Каталог научных разработок" class="subnavi-link">Каталог научных разработок</a></li>
@@ -157,19 +157,19 @@
                                                     <li class="last"><a href="http://forum-physicists.npi-tu.ru/" title="Клуб молодых физиков «Аэлита»" class="subnavi-link">Клуб молодых физиков «Аэлита»</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="nested-sub-block">
+                                            <div id="nested-header-addresses" class="nested-sub-block">
                                                 <ul class="lvl-2-full">
                                                     <li><a href="/index.php?id=75" title="Почтовые и электронные адреса" class="subnavi-link">Почтовые и электронные адреса</a></li>
                                                     <li class="last"><a href="/index.php?id=76" title="Финансовые реквизиты " class="subnavi-link">Финансовые реквизиты </a></li>
                                                 </ul>
                                             </div>
-                                            <div class="nested-sub-block">
+                                            <div id="nested-header-culture" class="nested-sub-block">
                                                 <ul class="lvl-2-full">
                                                     <li><a href="/index.php?id=1901" title="Дом ученых и студентов" class="subnavi-link">Дом ученых и студентов</a></li>
                                                     <li class="last"><a href="/index.php?id=4882" title="Музей истории ЮРГПУ(НПИ)" class="subnavi-link">Музей истории ЮРГПУ(НПИ)</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="nested-sub-block">
+                                            <div id="nested-header-paid" class="nested-sub-block">
                                                 <ul class="lvl-2-full">
                                                     <li><a href="/index.php?id=1938" title="Общий раздел" class="subnavi-link">Общий раздел</a></li>
                                                     <li><a href="http://www.npi-tu.ru/docs/akkr_2012/info/Lizenziya.pdf" title="Уровень и направленность реализуемых основных и дополнительных образовательных программ, формы и сроки их освоения" class="subnavi-link">Уровень и направленность реализуемых основных и дополнительных образовательных программ, формы и сроки их освоения</a></li>
@@ -223,7 +223,9 @@
                         </div>
                     </div>
                 </div>
-                <div id="main-header-nav-bg"></div>
+                <div id="header-nav-bg-wrapper">
+                    <div id="main-header-nav-bg"></div>
+                </div>
             </nav>
             <div id="main-header-landing">
                 <div class="gradient"></div>
@@ -233,6 +235,29 @@
                         <h1>Первый ВУЗ юга России!</h1>
                         <h2>Основан в 1907 году</h2>
                         <p>«Южно-Российский государственный политехнический университет (НПИ) имени М.И. Платова»</p>
+
+                        <div id="main-heder-quicklinks">
+                            <a href="#" class="link-wrapper">
+                                <div class="link">
+                                    Расписание занятий
+                                </div>
+                            </a>
+                            <a href="#" class="link-wrapper">
+                                <div class="link">
+                                    Как стать студентом
+                                </div>
+                            </a>
+                            <a href="#" class="link-wrapper">
+                                <div class="link noborder">
+                                    Успеваемость
+                                </div>
+                            </a>
+                            <a href="#main-fast-contacts" class="arrow-continue-wrapper">
+                                <div class="arrow-continue">
+                                    Прокручивайте вниз<i class="fa fa-angle-down"></i>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -288,7 +313,7 @@
             <section id="main-links">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-3 main-links-row">
+                        <div class="col-sm-3 main-links-row first">
                             <h2><i class="fa fa-suitcase"></i><strong>Абитуриентам</strong></h2>
                             <ul>
                                 <li><a href="#">Довузовская подготовка (CДШ)</a></li>
@@ -336,23 +361,33 @@
             <section id="main-story">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-lg-5">
                             <div class="person">
-                                <div class="photo"><img src="/images/platov.jpg" /></div>
-                                <h3>Платов Матвей Иванович?</h3>
-                                <small>Типа страница истории?</small>
+                                <div class="photo-wrapper">
+                                    <div class="photo"><img src="/images/platov.jpg" /></div>
+                                </div>
+                                <div class="description">
+                                    <h3>Платов Матвей Иванович</h3>
+                                    <small>Страница истории?</small>
+                                </div>
                             </div>
-                            <div class="text">Maecenas et maximus nulla. Nam laoreet pharetra enim, non eleifend ex pellentesque eu. Nulla laoreet mauris in risus consectetur finibus. Nulla nisi ipsum, finibus a pulvinar vehicula, posuere ut dui. Cras nisl odio, ultricies ut neque id, placerat elementum massa. Donec blandit augue tincidunt odio rhoncus, quis mollis libero consequat. Vestibulum ut auctor nisl. Nulla lacinia mollis dui. Ut non tortor tempor, faucibus ante at, porta erat.
+                            <div class="text">В Отечественную войну 1812 г. Платов командовал казачьими полка-ми на границе, а затем казачьим корпусом из 14 казачьих полков (около 7 тыс. сабель). Нанёс поражение французским войскам в боях при Мире (28 июня) и Романовке (2 июля) – это были первые победы русской армии в войне. После сражения при Салтановке прикрывал отступление генерала П.И. Багратиона к Смоленску, что обеспечило соединение двух основных русских армий.
+                                В Бородинском сражении 26 августа 1812 г. совершил стремительный рейд в тыл левого фланга французской армии, чем приостановил на два ча-са атаки противника на центр обороны русских войск (на известную «бата-рею», или точнее 7-й корпус генерала Н.Н. Раевского). Пользовавшийся огромным авторитетом и любовью всего Дона, Платов призвал казаков к вступлению в ополчение, и уже в Тарутине казачий воинский контингент достиг 22 тыс. человек. Особенно прославился смелостью и военным ис-кусством во время преследования отступающей армии Наполеона, за что и получил в декабре 1812 г. титул графа. Казаки Платова взяли в плен у реки Березины генерала Дзевановского.
+
                             </div>
                             <a href="#" class="button more">Читать историю</a>
                         </div>
-                        <div class="col-lg-5">
+                        <div class="col-lg-4">
                             <div class="person">
-                                <div class="photo"><img src="/images/platov.jpg" /></div>
-                                <h3>Ректор я хз как зовут</h3>
-                                <small>Ректор, ага</small>
+                                <div class="photo-wrapper">
+                                    <div class="photo"><img src="/images/rector.gif" /></div>
+                                </div>
+                                <div class="description">
+                                    <h4>Передерий Владимир Григорьевич</h4>
+                                    <small>Ректор ЮРГПУ (НПИ)</small>
+                                </div>
                             </div>
-                            <div class="text">Suspendisse in quam justo. Sed enim urna, ultricies ac justo vel, ultrices rutrum leo. Ut blandit odio massa, vitae sagittis ex ultrices non. Nam nec convallis eros. Ut ac leo felis. Suspendisse semper rhoncus mauris, fringilla interdum turpis congue eu. Aenean vel purus vel turpis vehicula faucibus. Fusce porta, nibh sed imperdiet laoreet, massa ligula sollicitudin ipsum, sed eleifend leo diam vel mi. Donec faucibus risus eu dui cursus volutpat. Duis eget dignissim urna. Quisque nec consectetur ex. Pellentesque ac fermentum diam.
+                            <div class="text">Руководство университета открыто к взаимодействию со структурами власти всех уровней. В стенах вуза проводятся городские, региональные мероприятия, а также федерального и мирового уровней – такие, как заседание Координационного совета объединений работодателей Южного федерального округа, круглые столы в рамках Всемирного конгресса казаков, встречи с директорами казачьих кадетских корпусов и других образовательных учреждений. На них решаются вопросы участия предпринимателей в трудоустройстве выпускников вузов юга России, подготовки управленческих кадров для ВКО «Всевеликое Войско Донское», развития казачества и казачьих регионов, привлечения студенческой молодёжи к волонтёрскому движению.
                             </div>
                             <a href="#" class="button more">Стать студентом?</a>
                         </div>
@@ -375,11 +410,10 @@
                                 <h2>Последние новости:</h2>
                                 <article>
                                     <div class="left">
-                                        <div class="mileline"></div>
                                         <div class="date">01<small>окт.</small></div>
                                     </div>
                                     <div class="content">
-                                        <a href="#">
+                                        <a class="news-header-link" href="#">
                                             <header class="article-header imaged" style="background-image: url('/images/photos/back.jpg');">
                                                 <div class="overlay">
                                                     <h3>ЮРГПУ(НПИ) в ТОП-50 лучших вузов России по Техническим, естественнонаучным направлениям и точным наукам</h3>
@@ -429,27 +463,71 @@
                         </div>
                         <div id="featured-links-wrapper" class="fibo-left">
                             <h2>Полезные ссылки:</h2>
-                            <ul id="featured-links">
-                                <li class="featured-link temp-illumintati">
-                                    <a href="#"><div class="overlay"><h5>Кафедра Иллюминатов</h5></div></a>
-                                </li><li class="featured-link  temp-cat">
-                                <a href="#"><div class="overlay"><h5>Институт благородных котят</h5></div></a>
-                            </li><li class="featured-link  temp-scincidae">
-                                <a href="#"><div class="overlay"><h5>Сцинковые для пацанов</h5></div></a>
-                            </li><li class="featured-link temp-illumintati">
-                                <a href="#"><div class="overlay"><h5>Кафедра Иллюминатов</h5></div></a>
-                            </li><li class="featured-link  temp-cat">
-                                <a href="#"><div class="overlay"><h5>Институт благородных котят</h5></div></a>
-                            </li><li class="featured-link  temp-scincidae">
-                                <a href="#"><div class="overlay"><h5>Сцинковые для пацанов</h5></div></a>
-                            </li><li class="featured-link temp-illumintati">
-                                <a href="#"><div class="overlay"><h5>Кафедра Иллюминатов</h5></div></a>
-                            </li><li class="featured-link  temp-cat">
-                                <a href="#"><div class="overlay"><h5>Институт благородных котят</h5></div></a>
-                            </li><li class="featured-link  temp-scincidae">
-                                <a href="#"><div class="overlay"><h5>Сцинковые для пацанов</h5></div></a>
-                            </li>
-                            </ul>
+                            <div id="featured-links">
+                                <a href="//pobeda.npi-tu.ru/" title="День Победы в НПИ">
+                                    <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-9may.da4.jpg');">
+                                        <div class="overlay">
+                                        <h5>День Победы в НПИ</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="//wi.npi-tu.ru/" title="Военный институт">
+                                    <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-war.da4.jpg');">
+                                        <div class="overlay">
+                                            <h5>Военный институт</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="index.php?id=3347" title="Казачья сотня">
+                                    <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-kazaki.da4.jpg');">
+                                        <div class="overlay">
+                                            <h5>Казачья сотня</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="//lib.npi-tu.ru/" title="Научно-Техническая Библиотека">
+                                    <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-library.da4.jpg');">
+                                        <div class="overlay">
+                                            <h5>Научно-Техническая Библиотека</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="//ifvs.npi-tu.ru/" title="Институт физического воспитания и спорта">
+                                    <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-sport.da4.jpg');">
+                                        <div class="overlay">
+                                            <h5>Институт физического воспитания и спорта</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="//hsm.npi-tu.ru/" title="Высшая школа управления">
+                                    <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-imo.da4.jpg');">
+                                        <div class="overlay">
+                                            <h5>Институт международного образования</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="//hsm.npi-tu.ru/" title="Высшая школа управления">
+                                    <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-h_school.da4.jpg');">
+                                        <div class="overlay">
+                                            <h5>Высшая школа управления</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="index.php?id=3544" title="Олимпиада школьников «Звезда»">
+                                    <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-star.da4.jpg');">
+                                        <div class="overlay">
+                                            <h5>Олимпиада школьников «Звезда»</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="index.php?id=3005" title="Фотогалерея ЮРГПУ(НПИ">
+                                    <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-gallery.da4.jpg');">
+                                        <div class="overlay">
+                                            <h5>Фотогалерея ЮРГПУ(НПИ)</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

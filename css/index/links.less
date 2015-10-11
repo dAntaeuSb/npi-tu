@@ -1,8 +1,12 @@
 #main-links{
+  background: #eee;
+
   .main-links-row{
+    padding-bottom: 20px;
 
     h2{
       border-bottom: 1px solid @main;
+      color: @main;
       font-weight: bold;
       text-align: left;
       padding-top: 2rem;
@@ -24,6 +28,24 @@
       li{
         margin: .6rem 0;
         padding-left: 1.6rem;
+      }
+    }
+
+    &.first{
+      background: @main;
+      color: #fff;
+
+      h2{
+        border-bottom: 1px solid #fff;
+        color: #fff;
+
+        i{
+          color: #fff;
+        }
+      }
+
+      ul > li > a{
+        color: #fff;
       }
     }
   }

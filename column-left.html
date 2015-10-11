@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>npi-tu.ru alpha</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="/css/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/article.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/swiper.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript" src="/js/vendor/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/js/moduleman.js"></script>
+    <script type="text/javascript" src="/js/header.js"></script>
+    <script type="text/javascript" src="/js/nav.js"></script>
+    <script type="text/javascript" src="/js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="/js/main-slider.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&language=ru"></script>
+    <script type="text/javascript" src="/js/gmaps.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <aside id="sidebar">
+        <div id="main-sidebar-search">
+            <input id="main-sidebar-search-box" placeholder="Поиск" type="text" />
+        </div>
+        <nav id="main-sidebar-nav">
+            <ul class="lvl-0 sidebar-nav-list">
+            <li id="sidebar-nav-nav" class="parent">
+                <a href="#">Навигация</a>
+                <div class="nesting-menu-wrapper">
+                    <div class="nesting-menu">
+                        <ul class="lvl-1">
+                            <li><a href="#">Факультеты и институты</a>
+                                <ul class="lvl-2">
+                                    <li><a href="#">Информация о факультетах</a></li>
+                                    <li><a href="#">Информация об институтах</a></li>
+                                    <li><a href="#">Филиалы</a></li>
+                                    <li><a href="#">Представительства</a></li>
+                                    <li><a href="#">Высшая школа управления</a></li>
+                                    <li><a href="#">Авторизированный Центр Сертификации</a></li>
+                                    <li><a href="#">Колледж</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Общий раздел</a></li>
+                            <li><a href="#">Учебный процесс</a></li>
+                            <li><a href="#">Наука</a></li>
+                            <li><a href="#">Закупки ЮРГПУ(НПИ)</a></li>
+                            <li><a href="#">Интернет ресурсы</a></li>
+                            <li><a href="#">Адреса. Реквизиты</a></li>
+                            <li><a href="#">Культурная жизнь</a></li>
+                            <li><a href="#">Платные услуги</a></li>
+                            <li><a href="#">Военно-патриотический центр «ПЛАМЯ»</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Сведения об образовательном учреждении</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li><li id="sidebar-nav-abitur" class="parent">
+                <a href="#"><span class="borderland">Абитуриенту</span></a>
+            </li><li id="sidebar-nav-student" class="parent">
+                <a href="#"><span class="borderland">Студенту</span></a>
+            </li><li id="sidebar-nav-aspirant" class="parent">
+                <a href="#"><span class="borderland">Аспиранту</span></a>
+            </li><li id="sidebar-nav-graduate">
+                <a href="#"><span class="borderland">Выпускнику</span></a>
+            </li><li id="sidebar-nav-contacts">
+                <a href="#"><span class="borderland">Контакты</span></a>
+            </li><li id="sidebar-nav-info">
+                <a href="#"><span class="borderland">Сведения об образовательном учреждении</span></a>
+            </li>
+            </ul>
+        </nav>
+    </aside>
+    <section id="page">
+        <header id="main-header" class="small">
+            <nav id="main-header-nav">
+                <div class="impact">
+                    <div class="container">
+                        <div id="header-nav-open-button-wrap">
+                            <div id="header-nav-open-button"><i class="fa fa-bars"></i></div>
+                        </div>
+                        <!--<div id="top-logo"></div>-->
+                        <ul class="lvl-0 header-nav-list">
+                            <li id="header-nav-nav" class="parent">
+                                <a href="#"><span class="borderland">Навигация</span></a>
+                                <div class="nesting-menu-wrapper">
+                                    <div class="nesting-menu container">
+                                        <ul class="lvl-1">
+                                            <li id="pointer-header-nav">Факультеты и институты</li>
+                                            <li id="pointer-header-random">Общий раздел</li>
+                                            <li id="pointer-header-edproc">Учебный процесс</li>
+                                            <li id="pointer-header-science">Наука</li>
+                                            <li id="pointer-header-invoices">Закупки ЮРГПУ(НПИ)</li>
+                                            <li id="pointer-header-resources">Интернет ресурсы</li>
+                                            <li id="pointer-header-addresses">Адреса. Реквизиты</li>
+                                            <li id="pointer-header-culture">Культурная жизнь</li>
+                                            <li id="pointer-header-paid">Платные услуги</li>
+                                            <li id="pointer-header-patriots">Военно-патриотический центр «ПЛАМЯ»</li>
+                                            <li id="pointer-header-hire">Вакансии</li>
+                                            <li id="pointer-header-info">Сведения об образовательном учреждении</li>
+                                        </ul>
+                                        <div class="nesting-sub container">
+                                            <!--<div class="default-message">
+                                                <h3>Выберите пункт из списка слева</h3>
+                                            </div>-->
+                                            <div id="nested-header-nav" class="nested-sub-block">
+                                                <ul class="lvl-2-full">
+                                                    <li><a href="/index.php?id=27" title="Информация о факультетах" class="subnavi-link">Информация о факультетах</a></li>
+                                                    <li><a href="/index.php?id=1993" title="Информация об институтах" class="subnavi-link">Информация об институтах</a></li>
+                                                    <li><a href="/index.php?id=34" title="Филиалы" class="subnavi-link">Филиалы</a></li>
+                                                    <li><a href="/index.php?id=1784" title="Представительства" class="subnavi-link">Представительства</a></li>
+                                                    <li><a href="http://hsm.npi-tu.ru/" title="Высшая школа управления" class="subnavi-link">Высшая школа управления</a></li>
+                                                    <li><a href="http://acs.npi-tu.ru/" title="Авторизированный Центр Сертификации" class="subnavi-link">Авторизированный Центр Сертификации</a></li>
+                                                    <li class="last"><a href="http://gtc.npi-tu.ru/" title="Колледж" class="subnavi-link">Колледж</a></li>
+                                                </ul>
+                                            </div>
+                                            <div id="nested-header-random" class="nested-sub-block">
+                                                <ul class="lvl-2-full">
+                                                    <li><a href="/index.php?id=35" title="Руководство" class="subnavi-link">Руководство</a></li>
+                                                    <li><a href="/index.php?id=36" title="Ученый совет" class="subnavi-link">Ученый совет</a></li>
+                                                    <li><a href="/index.php?id=39" title="Подразделения" class="subnavi-link">Подразделения</a></li>
+                                                    <li><a href="/index.php?id=37" title="Структура управления " class="subnavi-link">Структура управления </a></li>
+                                                    <li><a href="/index.php?id=43" title="Устав" class="subnavi-link">Устав</a></li>
+                                                    <li><a href="/index.php?id=2976" title="Попечительский совет" class="subnavi-link">Попечительский совет</a></li>
+                                                    <li><a href="/index.php?id=44" title="Общественная палата" class="subnavi-link">Общественная палата</a></li>
+                                                    <li><a href="/index.php?id=4770" title="Сведения о доходах">Сведения о доходах</a></li>
+                                                    <li class="last"><a href="/index.php?id=42" title="Документы">Документы</a></li>
+                                                </ul>
+                                            </div>
+                                            <div id="nested-header-edproc" class="nested-sub-block">
+                                                <ul class="lvl-2-full">
+                                                    <li><a href="/index.php?id=1804" title="Учебно-методическое управление" class="subnavi-link">Учебно-методическое управление</a></li>
+                                                    <li><a href="/index.php?id=1806" title="Уровни (ступени) образования" class="subnavi-link">Уровни (ступени) образования</a></li>
+                                                    <li><a href="/index.php?id=1807" title="Планирование учебного процесса" class="subnavi-link">Планирование учебного процесса</a></li>
+                                                    <li><a href="/index.php?id=1808" title="Обеспечение учебного процесса" class="subnavi-link">Обеспечение учебного процесса</a></li>
+                                                    <li><a href="/index.php?id=1809" title="Контроль качества образования" class="subnavi-link">Контроль качества образования</a></li>
+                                                    <li><a href="http://olymp.npi-tu.ru/" title="Олимпиады и конкурсы" class="subnavi-link">Олимпиады и конкурсы</a></li>
+                                                    <li><a href="/index.php?id=4960" title="Конференции и семинары" class="subnavi-link">Конференции и семинары</a></li>
+                                                    <li><a href="/index.php?id=1811" title="Аккредитация и государственная итоговая аттестация" class="subnavi-link">Аккредитация и государственная итоговая аттестация</a></li>
+                                                    <li class="last"><a href="/index.php?id=3208" title="Об условиях обучения инвалидов и лиц с ограниченными возможностями здоровья" class="subnavi-link">Об условиях обучения инвалидов и лиц с ограниченными возможностями здоровья</a></li>
+                                                </ul>
+                                            </div>
+                                            <div id="nested-header-invoices" class="nested-sub-block">
+                                                <ul class="lvl-2-full">
+                                                    <li><a href="/index.php?id=73" title="Документы для заявок" class="subnavi-link">Документы для заявок</a></li>
+                                                    <li><a href="/index.php?id=74" title="Извещения о заказах " class="subnavi-link">Извещения о заказах </a></li>
+                                                    <li class="last"><a href="/index.php?id=2527" title="Обучающий материал" class="subnavi-link">Обучающий материал</a></li>
+                                                </ul>
+                                            </div>
+                                            <div id="nested-header-resources" class="nested-sub-block">
+                                                <ul class="lvl-2-full">
+                                                    <li><a href="http://www.npi-tu.ru/index.php?id=1837" title="Платовская казачья страничка" class="subnavi-link">Платовская казачья страничка</a></li>
+                                                    <li><a href="http://catalog.npi-tu.ru/index.php" title="Каталог научных разработок" class="subnavi-link">Каталог научных разработок</a></li>
+                                                    <li><a href="http://lib.npi-tu.ru/" title="Библиотека" class="subnavi-link">Библиотека</a></li>
+                                                    <li class="last"><a href="http://forum-physicists.npi-tu.ru/" title="Клуб молодых физиков «Аэлита»" class="subnavi-link">Клуб молодых физиков «Аэлита»</a></li>
+                                                </ul>
+                                            </div>
+                                            <div id="nested-header-addresses" class="nested-sub-block">
+                                                <ul class="lvl-2-full">
+                                                    <li><a href="/index.php?id=75" title="Почтовые и электронные адреса" class="subnavi-link">Почтовые и электронные адреса</a></li>
+                                                    <li class="last"><a href="/index.php?id=76" title="Финансовые реквизиты " class="subnavi-link">Финансовые реквизиты </a></li>
+                                                </ul>
+                                            </div>
+                                            <div id="nested-header-culture" class="nested-sub-block">
+                                                <ul class="lvl-2-full">
+                                                    <li><a href="/index.php?id=1901" title="Дом ученых и студентов" class="subnavi-link">Дом ученых и студентов</a></li>
+                                                    <li class="last"><a href="/index.php?id=4882" title="Музей истории ЮРГПУ(НПИ)" class="subnavi-link">Музей истории ЮРГПУ(НПИ)</a></li>
+                                                </ul>
+                                            </div>
+                                            <div id="nested-header-paid" class="nested-sub-block">
+                                                <ul class="lvl-2-full">
+                                                    <li><a href="/index.php?id=1938" title="Общий раздел" class="subnavi-link">Общий раздел</a></li>
+                                                    <li><a href="http://www.npi-tu.ru/docs/akkr_2012/info/Lizenziya.pdf" title="Уровень и направленность реализуемых основных и дополнительных образовательных программ, формы и сроки их освоения" class="subnavi-link">Уровень и направленность реализуемых основных и дополнительных образовательных программ, формы и сроки их освоения</a></li>
+                                                    <li><a href="/index.php?id=1931" title="Перечень платных дополнительных образовательных услуг" class="subnavi-link">Перечень платных дополнительных образовательных услуг</a></li>
+                                                    <li><a href="assets/files/docs/pfu/pl_uslugi_ord.pdf" title="Порядок  предоставления платных образовательных и платных дополнительных образовательных услуг" class="subnavi-link">Порядок  предоставления платных образовательных и платных дополнительных образовательных услуг</a></li>
+                                                    <li><a href="/index.php?id=1930" title="Перечень платных образовательных услуг" class="subnavi-link">Перечень платных образовательных услуг</a></li>
+                                                    <li><a href="/index.php?id=1933" title="Стоимость образовательных услуг" class="subnavi-link">Стоимость образовательных услуг</a></li>
+                                                    <li><a href="//abiturient.npi-tu.ru/index.php?id=23" title="Порядок приема и требования к поступающим" class="subnavi-link">Порядок приема и требования к поступающим</a></li>
+                                                    <li class="last"><a href="http://abiturient.npi-tu.ru/index.php?id=753" title="Форма документа, выдаваемого по окончании обучения" class="subnavi-link">Форма документа, выдаваемого по окончании обучения</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li><li id="header-nav-abitur" class="parent">
+                            <a href="#"><span class="borderland">Абитуриенту</span></a>
+                            <div class="nesting-menu-wrapper">
+                                <div class="nesting-menu container">
+                                    <div class="row">
+                                        <div class="col-md-4">Довузовская подготовка (CДШ)</div>
+                                        <div class="col-md-4">Для поступающих</div>
+                                        <div class="col-md-4">Заочное обучение</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li><li id="header-nav-student">
+                            <a href="#"><span class="borderland">Студенту</span></a>
+                        </li><li id="header-nav-aspirant">
+                            <a href="#"><span class="borderland">Аспиранту</span></a>
+                        </li><li id="header-nav-graduate">
+                            <a href="#"><span class="borderland">Выпускнику</span></a>
+                        </li><li id="header-nav-contacts">
+                            <a href="#"><span class="borderland">Контакты</span></a>
+                        </li>
+                        </ul>
+                        <div id="main-header-modes">
+                            <div id="bright-mode" class="mode"><i class="fa fa-eye"></i></div>
+                            <div id="language-mode" class="mode">
+                                RU
+                                <ul>
+                                    <li>RU</li>
+                                    <li>EN</li>
+                                    <li>DE</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="header-search">
+                            <input id="header-search-input" type="text" placeholder="Поиск">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="header-nav-bg-wrapper">
+                    <div id="main-header-nav-bg"></div>
+                </div>
+            </nav>
+            <div id="main-header-landing">
+                <div class="gradient"></div>
+                <div class="impact">
+                    <div class="container">
+                        <div id="header-main-logo"></div>
+                        <h1>Первый ВУЗ юга России!</h1>
+                        <h2>Основан в 1907 году</h2>
+                        <p>«Южно-Российский государственный политехнический университет (НПИ) имени М.И. Платова»</p>
+
+                        <div id="main-heder-quicklinks">
+                            <a href="#" class="link-wrapper">
+                                <div class="link">
+                                    Расписание занятий
+                                </div>
+                            </a>
+                            <a href="#" class="link-wrapper">
+                                <div class="link">
+                                    Как стать студентом
+                                </div>
+                            </a>
+                            <a href="#" class="link-wrapper">
+                                <div class="link noborder">
+                                    Успеваемость
+                                </div>
+                            </a>
+                            <a href="#main-fast-contacts" class="arrow-continue-wrapper">
+                                <div class="arrow-continue">
+                                    Прокручивайте вниз<i class="fa fa-angle-down"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="content">
+            <section class="article-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 navhead">
+                            Дочерние категории
+                        </div>
+                        <div class="col-sm-9 breadcrumbs">
+                            Официальный сайт ЮРГПУ(НПИ) » Учебный процесс » Учебно-методическое управление
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="article">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 article-nav-wrapper">
+                            <ul>
+                                <li><a href="/index.php?id=1820" title="Нормы времени для расчета основных видов работ ППС(действуют до 01.09.2014г.)" >Нормы времени для расчета основных видов работ ППС(действуют до 01.09.2014г.)</a></li>
+                                <li><a href="/index.php?id=2963" title="Нормы времени для расчета основных видов работ ППС(действуют c 01.09.2014г.)" >Нормы времени для расчета основных видов работ ППС(действуют c 01.09.2014г.)</a></li>
+                                <li><a href="http://iasu.npi-tu.ru/schedule/" title="Расписание учебных занятий" >Расписание учебных занятий</a></li>
+                                <li><a href="/index.php?id=1822" title="Расписание зачетов и экзаменов" >Расписание зачетов и экзаменов</a></li>
+                                <li class="last"><a href="/index.php?id=1922" title="Порядок формирования  дисциплин по выбору обучающихся" >Порядок формирования  дисциплин по выбору обучающихся</a></li>
+                            </ul>
+                            <div class="triangle-down"><div></div></div>
+                        </div>
+                        <div class="col-sm-9 article">
+                            <div class="page-header"><h3><strong>Учебно-методическое управление</strong></h3></div>
+                            <p><img style="float: right; margin: 10px;" src="assets/images/UMU/1291191819_zakon-ob-obrazovanii.jpg" alt="" width="120" height="175" /></p>
+                            <p>Учебно-методическое управление (УМУ) организует и координирует учебную, учебно-методическую, организационно-методическую деятельности в университете,осуществляет контроль качества учебной работы, реализует информатизацию учебного процесса, обеспечивает взаимодействие базового вуза с институтами(филиалами), филиалами, представительствами, колледжами, кафедрами, структурами довузовского и послевузовского образования по вопросам деятельности УМУ.</p>
+                            <p>адрес: 346428, Ростовская область г. Новочеркасск, ул Просвещения 132</p>
+                            <p>График работы: пн-пт., 9.00-13.00, 14.00-18.00.</p>
+                            <hr />
+                            <p>&nbsp;</p>
+                            <p><strong>Начальник Учебно-методического управления</strong><span>&nbsp;<span>Кравченко Жанна Владимировна</span></span><span>,&nbsp;</span></p>
+                            <p>телефон (факс) (8635) 255-421; e-mail: <a href="mailto:umu-npi@mail.ru">umu-npi@mail.ru</a><a class="daria-action" href="mailto:umu-npi@mail.ru"></a></p>
+                            <p>&nbsp;</p>
+                            <p><strong>Заместитель начальника Учебно-методического управления</strong>&nbsp;Новосельцева Ирина Валентиновна</p>
+                            <p>телефон: (8635) 255-147; e-mail: <a href="mailto:novochomo@rambler.ru">novochomo@rambler.ru</a><a href="mailto:novochomo@rambler.ru"></a></p>
+                            <p>&nbsp;</p>
+                            <p><strong>Заместитель начальника Учебно-методического управления</strong>&nbsp;Болгова Анна Иполитовна</p>
+                            <p>телефон: (8635) 255-450;</p>
+                            <p>&nbsp;</p>
+                            <p><strong>Группа организации и контроля качества учебного процесса</strong></p>
+                            <p>телефон<strong>:</strong>&nbsp;(8635) 255-376, 255-449, e-mail: <a href="mailto:umu@npi-tu.ru">umu@npi-tu.ru</a></p>
+                            <p>&nbsp;</p>
+                            <p><strong>Группа аттестации и аккредитации</strong></p>
+                            <p>телефон<strong>&nbsp;</strong>(8635) 255-450; e-mail: <a href="mailto:novochomo@rambler.ru">novochomo@rambler.ru</a>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p><strong>Научно-методический группа</strong></p>
+                            <p>телефон<strong>&nbsp;</strong>(8635) 255-144; e-mail: <a href="mailto:alekseenko-tf@yandex.ru">alekseenko-tf@yandex.ru</a></p>
+                            <p>&nbsp;</p>
+                            <p><strong>Группа мониторинга &nbsp;качества&nbsp; обучения</strong></p>
+                            <p>Тел. &nbsp;(8635) 255-451.&nbsp;&nbsp; е-mail:&nbsp;<a href="mailto:nvis65@mail.ru">nvis65@mail.ru</a></p>
+                            <p>&nbsp;</p>
+                            <p><strong>Руководитель учебной и производственной практик&nbsp;</strong>Глуходедова Алевтина Николаевна&nbsp;</p>
+                            <p>телефон: (8635) 255-324; e-mail:&nbsp;<a href="mailto:gluhodedova@gmail.com">gluhodedova@gmail.com</a></p>
+                            <p>&nbsp;</p>
+                            <p><strong>Положение о подразделении:</strong></p>
+                            <p><a href="assets/files/pologenia_ob_podrazd/polog_umu.PDF">Положение об УМУ</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <footer id="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-md-4">
+                        <h5>Контакты</h5>
+                        <ul class="contacts">
+                            <li><strong>Адрес</strong>: 346428, Ростовская обл., г. Новочеркасск, ул. Просвещения, 132</li>
+                            <li><strong>E-mail</strong>: <a href="mailto:pressa_npi@mail.ru">pressa_npi@mail.ru</a></li>
+                            <li><strong>Телефон</strong>: <a href="tel:88635255055">8(8635)25-50-55</a></li>
+                        </ul>
+                    </div>
+                    <div class="col col-md-4">
+                        <h5>Инфо</h5>
+                        <p>© 2015 Южно-Российский государственный политехнический университет (Новочеркасский политехнический институт) имени М.И. Платова</p>
+                    </div>
+                    <div class="col col-md-4">
+                        <h5>О сайте</h5>
+                        <p>Ищите нас в социальных сетях:</p>
+                        <div class="footer-social-links">
+                            <a href="#" class="social-link"><i class="fa fa-vk"></i></a>
+                            <a href="#" class="social-link"><i class="fa fa-odnoklassniki"></i></a>
+                            <a href="#" class="social-link"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <div id="footer-map"></div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

@@ -383,6 +383,11 @@ header#main-header.full div#main-header-landing #main-heder-quicklinks {
   -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
 }
+@media (max-width: 1200px) {
+  header#main-header.full div#main-header-landing #main-heder-quicklinks {
+    display: none;
+  }
+}
 header#main-header.full div#main-header-landing #main-heder-quicklinks .link-wrapper {
   display: block;
   float: left;

@@ -7,6 +7,24 @@ header#main-header {
   position: relative;
   overflow: hidden;
 }
+header#main-header #header-nav-bg-wrapper {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .8;
+  z-index: -1;
+}
+header#main-header #header-nav-bg-wrapper #main-header-nav-bg {
+  background-image: url('/images/photos/blured/day.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+}
 header#main-header nav#main-header-nav {
   background-color: #1d3d86;
   background-position: center;
@@ -17,25 +35,6 @@ header#main-header nav#main-header-nav {
   top: 0;
   width: 100%;
   z-index: 1000;
-}
-header#main-header nav#main-header-nav #header-nav-bg-wrapper {
-  display: block;
-  position: absolute;
-  overflow: hidden;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: .8;
-  z-index: -1;
-}
-header#main-header nav#main-header-nav #main-header-nav-bg {
-  background-image: url('/images/photos/blured/day.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
 }
 header#main-header nav#main-header-nav > .impact > .container {
   padding: 0;
@@ -319,6 +318,9 @@ header#main-header nav#main-header-nav #main-header-modes .mode ul li:hover {
 header#main-header.full {
   height: 100vh;
 }
+header#main-header.full #main-header-nav-bg {
+  height: 100vh;
+}
 header#main-header.full div#main-header-landing {
   height: 100vh;
 }
@@ -423,6 +425,9 @@ header#main-header.full #header-main-logo {
 }
 header#main-header.small {
   overflow: hidden;
+  height: 240px;
+}
+header#main-header.small #main-header-nav-bg {
   height: 240px;
 }
 header#main-header.small div#main-header-landing {
@@ -573,6 +578,10 @@ nav#main-sidebar-nav .sidebar-nav-list > li .nesting-menu-wrapper .nesting-menu 
   body.sidebar {
     overflow: hidden;
   }
+  body.sidebar #lord-wrap {
+    overflow: hidden;
+    width: 100vw;
+  }
   body.sidebar aside#sidebar {
     display: block;
   }
@@ -581,6 +590,7 @@ nav#main-sidebar-nav .sidebar-nav-list > li .nesting-menu-wrapper .nesting-menu 
     position: relative;
     margin-left: 260px;
     z-index: 5;
+    width: 100vw;
     -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
@@ -638,6 +648,9 @@ footer#main-footer .col img {
 footer#main-footer #footer-map {
   height: 60vh;
   width: 100%;
+}
+#lord-wrap {
+  overflow: hidden;
 }
 #page {
   overflow: hidden;

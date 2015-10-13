@@ -9,7 +9,7 @@ function Header() {
     var _self = this;
 
     this.DOM = {
-        main: "header#header",
+        main: "header#main-header",
         bg: "#main-header-nav-bg",
         gradient: "#main-header-landing .gradient",
         links: "#main-heder-quicklinks"
@@ -27,7 +27,6 @@ function Header() {
 
     this.scroll = function(t, l) {
         var p = t / (_self.DOM.main.height() - 57);
-        console.log(p);
 
         if(p < 1) {
             _self.DOM.bg.css({

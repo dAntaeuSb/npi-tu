@@ -599,6 +599,18 @@ nav#main-sidebar-nav .sidebar-nav-list > li .nesting-menu-wrapper .nesting-menu 
     -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    filter: grayscale(50%);
+  }
+  body.sidebar #page-overlay {
+    background: rgba(128, 128, 128, 0.25);
+    margin-left: 260px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2000;
   }
 }
 footer#main-footer {

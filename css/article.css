@@ -3,6 +3,8 @@
   color: #fff;
 }
 .article-top .navhead {
+  background: #fafafa;
+  color: #333;
   font-size: 1.4rem;
   padding: 20px;
 }

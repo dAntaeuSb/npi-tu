@@ -18,6 +18,7 @@ function Nav() {
     this.DOM = {
         main: "#main-header-nav",
         list: ".header-nav-list",
+        overlay: "#page-overlay",
         button: "#header-nav-open-button-wrap"
     };
 
@@ -86,6 +87,10 @@ function Nav() {
 
         this.DOM.button.click(function(e) {
             $('body').toggleClass('sidebar');
+        });
+
+        this.DOM.overlay.click(function(e) {
+            $('body').removeClass('sidebar');
         });
     };
 

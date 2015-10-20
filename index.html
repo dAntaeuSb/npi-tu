@@ -15,7 +15,9 @@
     <script type="text/javascript" src="/js/header.js"></script>
     <script type="text/javascript" src="/js/nav.js"></script>
     <script type="text/javascript" src="/js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="/js/vendor/jquery.arbitrary-anchor.js"></script>
     <script type="text/javascript" src="/js/main-slider.js"></script>
+    <script type="text/javascript" src="/js/biw.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&language=ru"></script>
     <script type="text/javascript" src="/js/gmaps.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,7 +36,7 @@
                     <a href="#">Навигация</a>
                     <div class="nesting-menu-wrapper">
                         <div class="nesting-menu">
-                            <ul class="lvl-1">
+                            <ul class="lvl-1" style="display: block;">
                                 <li><a href="#">Факультеты и институты</a>
                                     <ul class="lvl-2">
                                         <li><a href="#">Информация о факультетах</a></li>
@@ -91,7 +93,7 @@
                             <div id="header-nav-open-button-wrap">
                                 <div id="header-nav-open-button"><i class="fa fa-bars"></i></div>
                             </div>
-                            <!--<div id="top-logo"></div>-->
+                            <div id="header-nav-small-logo"></div>
                             <ul class="lvl-0 header-nav-list">
                                 <li id="header-nav-nav" class="parent">
                                     <a href="#"><span class="borderland">Навигация</span></a>
@@ -228,8 +230,8 @@
                             </div>
 
                             <div id="header-search">
-                                <input id="header-search-input" type="text" placeholder="Поиск">
                                 <i class="fa fa-search"></i>
+                                <input id="header-search-input" type="text" placeholder="Поиск">
                             </div>
                         </div>
                     </div>
@@ -584,9 +586,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="map-container">
-                    <div id="footer-map"></div>
+                    <div class="map-container">
+                        <div id="footer-map">
+                            <div id="footer-map-overlay">
+                                <div id="footer-map-popup">
+                                    Нажмите, чтобы показать карту
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </footer>
             <!-- Конец футера -->

@@ -147,6 +147,19 @@
         background: #eee;
         margin-top: 10px;
         padding: 10px;
+
+        @media (max-width: 700px) {
+          text-indent: 0;
+        }
+
+        .mobile-date{
+          color: #555;
+          float: right;
+
+          @media (min-width: 701px) {
+            display: none;
+          }
+        }
       }
     }
 

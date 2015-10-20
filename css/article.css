@@ -5,6 +5,7 @@
 .article-top .navhead {
   background: #fafafa;
   color: #333;
+  border-bottom: 1px solid #eee;
   font-size: 1.4rem;
   padding: 20px;
 }
@@ -16,9 +17,14 @@
   height: 62px;
 }
 #article .article {
+  text-indent: .6rem;
   font-family: Georgia;
+  line-height: 125%;
   font-size: 1.4rem;
   padding: 40px;
+}
+#article .article p {
+  padding: 10px 0;
 }
 .article-nav-wrapper {
   background: #fafafa;

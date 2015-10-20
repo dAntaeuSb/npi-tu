@@ -5,7 +5,7 @@
  * Proprietary and confidential
  */
 
-google.maps.event.addDomListener(window, 'load', init);
+//google.maps.event.addDomListener(window, 'load', init);
 
 function init() {
     var pos = new google.maps.LatLng(47.4165081, 40.0866668);

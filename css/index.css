@@ -210,6 +210,7 @@
 }
 #main-story .person .description {
   position: relative;
+  margin-left: 100px;
   min-height: 1px;
 }
 #main-story .person h3 {
@@ -345,6 +346,11 @@ div#featured-links div.featured-link .overlay:hover {
   position: relative;
   vertical-align: baseline;
   width: 100%;
+}
+@media (max-width: 700px) {
+  #main-news article {
+    display: block;
+  }
 }
 #main-news article .left {
   background-image: url("/images/mileline.png");
@@ -491,4 +497,57 @@ div#featured-links div.featured-link .overlay:hover {
   clear: both;
   font-size: 0;
   overflow: hidden;
+}
+#main-news article.first .left {
+  padding: 0 10px 10px 10px;
+}
+#main-news article.first .left .date-wrapper {
+  background: #fff;
+  padding-top: 10px;
+}
+#main-news article.more-news:hover {
+  background: #dde2ed;
+}
+#main-news article.more-news .left {
+  padding: 0;
+}
+#main-news article.more-news .left .more-wrapper {
+  background: #fff;
+  padding: 0 10px 0 10px;
+  width: 50%;
+}
+#main-news article.more-news .content {
+  padding: 30px 20px;
+}
+@media (max-width: 700px) {
+  #main-news article.more-news {
+    background: #1d3d86;
+    border: 1px solid #060d1d;
+    color: #fff;
+    text-shadow: 0 1px 0 #060d1d;
+    margin-top: 15px;
+    -webkit-box-shadow: inset 0 1px #566ea4;
+    -moz-box-shadow: inset 0 1px #566ea4;
+    box-shadow: inset 0 1px #566ea4;
+    -webkit-border-radius: 6px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 6px;
+    -moz-background-clip: padding;
+    border-radius: 6px;
+    background-clip: padding-box;
+  }
+  #main-news article.more-news:hover {
+    color: #1d3d86;
+    text-shadow: none;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 1px #ffffff;
+    -moz-box-shadow: inset 0 1px #ffffff;
+    box-shadow: inset 0 1px #ffffff;
+  }
+  #main-news article.more-news .content {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
 }

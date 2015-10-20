@@ -739,6 +739,9 @@ footer#main-footer #footer-map #footer-map-popup:before {
 .biw * {
   background-image: none !important;
 }
+.biw img {
+  display: none;
+}
 .biw header#main-header {
   background: #fff;
 }

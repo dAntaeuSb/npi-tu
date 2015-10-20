@@ -265,7 +265,7 @@
                                         Успеваемость
                                     </div>
                                 </a>
-                                <a href="#main-fast-contacts" class="arrow-continue-wrapper">
+                                <a href="##main-fast-contacts|500" class="arrow-continue-wrapper">
                                     <div class="arrow-continue">
                                         Прокручивайте вниз<i class="fa fa-angle-down"></i>
                                     </div>
@@ -290,7 +290,7 @@
                                 <h1><i class="fa fa-map-marker"></i></h1>
                                 <strong class="phone-title">Адрес:</strong>
                                 <p>Ростовская обл., г. Новочеркасск, ул. Просвещения, 132</p>
-                                <a class="phone" href="javascript:;">Показать на карте</a>
+                                <a class="phone" href="##map-container|500">Показать на карте</a>
                                 <a href="#" class="reception">
                                     Виртуальная приёмная
                                 </a>
@@ -424,9 +424,11 @@
                             <div class="fibo-right">
                                 <section id="main-news">
                                     <h2>Последние новости:</h2>
-                                    <article>
+                                    <article class="first">
                                         <div class="left">
-                                            <div class="date">01<small>окт.</small></div>
+                                            <div class="date-wrapper">
+                                                <div class="date">01<small>окт.</small></div>
+                                            </div>
                                         </div>
                                         <div class="content">
                                             <a class="news-header-link" href="#">
@@ -475,15 +477,18 @@
                                             </footer>
                                         </div>
                                     </article>
-                                    <article class="more-news">
-                                        <div class="left">
-                                            <div class="more-news"><i class="fa fa-chevron-circle-down"></i></div>
-                                        </div>
-                                        <div class="content">
-                                            <hr />
-                                            <a href="#">Читать архив новостей</a>
-                                        </div>
-                                    </article>
+                                    <a href="#">
+                                        <article class="more-news">
+                                            <div class="left">
+                                                <div class="more-wrapper">
+                                                    <div class="more-news"><i class="fa fa-chevron-circle-down"></i></div>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                Читать архив новостей
+                                            </div>
+                                        </article>
+                                    </a>
                                 </section>
                             </div>
                             <div id="featured-links-wrapper" class="fibo-left">
@@ -586,7 +591,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="map-container">
+                    <div id="map-container" class="map-container">
                         <div id="footer-map">
                             <div id="footer-map-overlay">
                                 <div id="footer-map-popup">

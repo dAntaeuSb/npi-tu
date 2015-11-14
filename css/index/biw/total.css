@@ -1,0 +1,56 @@
+.swiper-slide h3 {
+  color: #000;
+}
+@media (max-width: 401px) {
+  .swiper-slide h3 {
+    color: #000;
+  }
+}
+#main-fast-contacts {
+  background: #fff;
+  color: #000;
+}
+#main-fast-contacts h1 {
+  color: #000;
+}
+#main-fast-contacts a {
+  color: #000;
+}
+#main-fast-contacts .reception {
+  background: #fff;
+  border: 1px solid #000;
+}
+div#featured-links div.featured-link {
+  color: #fff;
+}
+div#featured-links div.featured-link .overlay h5 {
+  background: #fff;
+  color: #000;
+}
+#main-links {
+  background: #fff;
+}
+#main-links .main-links-row h2 {
+  border-bottom: none;
+  color: #000;
+}
+#main-links .main-links-row h2 i {
+  color: #000;
+}
+#main-links .main-links-row ul > li > a {
+  color: #000;
+}
+#main-links .main-links-row.first {
+  background: #fff;
+  color: #000;
+}
+#main-links .main-links-row.first h2 {
+  border-bottom: none;
+  color: #000;
+}
+#main-links .main-links-row.first h2 i {
+  color: #000;
+}
+#main-links .main-links-row.first ul > li > a {
+  color: #000;
+}

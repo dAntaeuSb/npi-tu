@@ -13,6 +13,7 @@
     <script type="text/javascript" src="/js/vendor/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="/js/moduleman.js"></script>
     <script type="text/javascript" src="/js/header.js"></script>
+    <script type="text/javascript" src="/js/navigation.js"></script>
     <script type="text/javascript" src="/js/nav.js"></script>
     <script type="text/javascript" src="/js/swiper/swiper.min.js"></script>
     <script type="text/javascript" src="/js/vendor/jquery.arbitrary-anchor.js"></script>
@@ -29,14 +30,15 @@
         <aside id="sidebar">
             <div id="main-sidebar-search">
                 <input id="main-sidebar-search-box" placeholder="Поиск" type="text" />
+                <i class="fa fa-search"></i>
             </div>
             <nav id="main-sidebar-nav">
                 <ul class="lvl-0 sidebar-nav-list">
-                <li id="sidebar-nav-nav" class="parent">
+                <li id="sidebar-nav-nav" class="parent active">
                     <a href="#">Навигация</a>
                     <div class="nesting-menu-wrapper">
                         <div class="nesting-menu">
-                            <ul class="lvl-1" style="display: block;">
+                            <ul class="lvl-1" \>
                                 <li><a href="#">Факультеты и институты</a>
                                     <ul class="lvl-2">
                                         <li><a href="#">Информация о факультетах</a></li>
@@ -100,6 +102,8 @@
                                     <div class="nesting-menu-wrapper">
                                         <div class="nesting-menu container">
                                             <ul class="lvl-1">
+                                                <li id="pointer-header-aspirant" class="visible-sm">Аспиранту</li>
+                                                <li id="pointer-header-graduate" class="visible-sm">Выпускнику</li>
                                                 <li id="pointer-header-nav">Факультеты и институты</li>
                                                 <li id="pointer-header-random">Общий раздел</li>
                                                 <li id="pointer-header-edproc">Учебный процесс</li>
@@ -114,9 +118,9 @@
                                                 <li id="pointer-header-info">Сведения об образовательном учреждении</li>
                                             </ul>
                                             <div class="nesting-sub container">
-                                                <!--<div class="default-message">
+                                                <div class="default-message">
                                                     <h3>Выберите пункт из списка слева</h3>
-                                                </div>-->
+                                                </div>
                                                 <div id="nested-header-nav" class="nested-sub-block">
                                                     <ul class="lvl-2-full">
                                                         <li><a href="/index.php?id=27" title="Информация о факультетах" class="subnavi-link">Информация о факультетах</a></li>
@@ -196,17 +200,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                </li><li id="header-nav-abitur" class="parent">
-                                <a href="#"><span class="borderland">Абитуриенту</span></a>
-                                <div class="nesting-menu-wrapper">
-                                    <div class="nesting-menu container">
-                                        <div class="row">
-                                            <div class="col-md-4">Довузовская подготовка (CДШ)</div>
-                                            <div class="col-md-4">Для поступающих</div>
-                                            <div class="col-md-4">Заочное обучение</div>
+                            </li><li id="header-nav-abitur" class="parent">
+                                <a href="#"><span class="borderland">Абитуриенту</span>
+                                    <div class="nesting-menu-wrapper">
+                                        <div class="nesting-menu container">
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </li><li id="header-nav-student">
                                 <a href="#"><span class="borderland">Студенту</span></a>
                             </li><li id="header-nav-aspirant">
@@ -244,7 +244,7 @@
                     <div class="gradient"></div>
                     <div class="impact">
                         <div class="container">
-                            <div id="header-main-logo"></div>
+                            <a href="/"><div id="header-main-logo"></div></a>
                             <h1>Первый ВУЗ юга России!</h1>
                             <h2>Основан в 1907 году</h2>
                             <p>«Южно-Российский государственный политехнический университет (НПИ) имени М.И. Платова»</p>

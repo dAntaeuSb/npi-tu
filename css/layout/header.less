@@ -128,6 +128,7 @@ header#main-header{
             padding: 0;
             overflow: hidden;
             max-height: 80vh;
+            position: relative;
 
             .lh-border-bottom-left-radius(2px);
             .lh-border-bottom-right-radius(2px);
@@ -149,7 +150,7 @@ header#main-header{
                 position: relative;
                 padding: .7rem 1rem;
 
-                &:hover{
+                &:hover, &.active{
                   background: #fff;
                   z-index: 5;
                 }
@@ -164,25 +165,46 @@ header#main-header{
               margin-left: 20%;
               overflow-x: hidden;
               overflow-y: scroll;
-              position: relative;
+              padding: 0;
+              position: absolute;
               max-height: 80vh;
+              height: 100%;
               width: 80%;
-
-              .lh-box-shadow(0 0 40px 0 rgba(0,0,0,.1));
 
               .default-message{
                 color: @main;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                position: absolute;
+                top: 0;
                 font-size: 3rem;
                 text-align: center;
                 height: 460px;
+                z-index: 0;
               }
 
               .nested-sub-block{
+                background: #fff;
+                display: none;
                 position: absolute;
+                width: 100%;
                 height: 100%;
+                z-index: 10;
+
+                .lh-transition(opacity .3s ease, transform .3s ease);
+
+                &.up{
+                  opacity: 0;
+
+                  .lh-transform(translateY(-100px));
+                }
+
+                &.down{
+                  opacity: 0;
+
+                  .lh-transform(translateY(100px));
+                }
               }
 
               .lvl-2-full{
@@ -514,6 +536,11 @@ header#main-header{
           font-size: 2rem;
           font-weight: 300;
           padding: 2rem 0 .6rem 200px;
+
+          @media (max-width: 701px) {
+            font-size: 1.6rem;
+            padding: 0 0 0 120px;
+          }
         }
 
         h2 {
@@ -522,6 +549,10 @@ header#main-header{
 
         p{
           padding: 0 0 0 200px;
+
+          @media (max-width: 701px) {
+            padding: 0 0 0 120px;
+          }
         }
       }
 
@@ -539,6 +570,10 @@ header#main-header{
       float: left;
       height: 140px;
       width: 170px;
+
+      @media (max-width: 701px) {
+        width: 100px;
+      }
     }
   }
 

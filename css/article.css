@@ -16,6 +16,12 @@
   align-items: center;
   height: 62px;
 }
+@media (max-width: 768px) {
+  .article-top .breadcrumbs {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
 #article .article {
   text-indent: .6rem;
   font-family: Georgia;
@@ -25,6 +31,15 @@
 }
 #article .article p {
   padding: 10px 0;
+}
+@media (max-width: 768px) {
+  #article .article {
+    font-size: 1rem;
+    padding: 20px;
+  }
+  #article .article p {
+    padding: 0;
+  }
 }
 .article-nav-wrapper {
   background: #fafafa;

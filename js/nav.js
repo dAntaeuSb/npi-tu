@@ -35,19 +35,11 @@ function Nav() {
             _self.current.li.removeClass('active');
         }
 
-        _self.current = {
-            li: null,
-            nesting: null
-        };
-
         _self.inactive = false;
     };
 
     var _select = function(el) {
-        if(!_self.inactive && $(el) !== _self.current.li) {
-            console.info($(el));
-            console.info(_self.current.li);
-
+        if($(el) !== _self.current.li) {
             _self.hide();
 
             _self.current.li = $(el);
@@ -67,22 +59,33 @@ function Nav() {
         _self._timeout = setTimeout(function() {
             _self.hide();
         }, 1000);
+        console.log('out!');
     };
 
     var _in = function() {
         clearTimeout(_self.timeout);
-        //alert('cleared ' + _self.timeout);
+        console.log('in!');
     };
 
     this.init = function() {
-        this.DOM.main.find('.header-nav-list').find('li.parent').each(function() {
-            $(this).click(function() {
-                _select(this);
-            });
+        this.DOM.main.find('.header-nav-list > li').each(function() {
+            if($(this).hasClass('parent')) {
+                $(this).click(function() {
+                    _select(this);
+                });
 
-            $(this).hover(function() {
-                _select(this);
-            });
+                $(this).mouseenter(function() {
+                    _select(this);
+                });
+            } else {
+                $(this).click(function() {
+                    _self.hide();
+                });
+
+                $(this).mouseenter(function() {
+                    _self.hide();
+                });
+            }
         });
 
         this.DOM.button.click(function(e) {

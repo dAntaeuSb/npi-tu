@@ -1,128 +1,129 @@
-.swiper-container {
-  width: 100%;
-  height: 60vh;
-  margin: 20px auto;
-  overflow: hidden;
+#main-slider{
+  .swiper-container {
+    width: 100%;
+    height: 60vh;
+    margin: 0;
+    overflow: hidden;
 
-  @media (max-width: 401px) {
-    //height: 85vh;
-    margin: 20px -15px 20px -15px !important;
-    width: 100vw;
+    @media (max-width: 401px) {
+      height: 100vh;
+      margin: 20px -15px 20px -15px !important;
+      width: 100vw;
 
-    .swiper-button-next{
-      opacity: .3;
-      right: -15px;
-
-      .lh-transition(right ease .3s, opacity ease .3s);
-    }
-
-    .swiper-button-prev{
-      opacity: .3;
-      left: -15px;
-
-      .lh-transition(left ease .3s, opacity ease .3s);
-    }
-
-    &:hover, &:active{
       .swiper-button-next{
-        opacity: 1;
-        right: 10px;
+        opacity: .3;
+        right: -15px;
+
+        .lh-transition(right ease .3s, opacity ease .3s);
       }
 
       .swiper-button-prev{
-        opacity: 1;
-        left: 10px;
+        opacity: .3;
+        left: -15px;
+
+        .lh-transition(left ease .3s, opacity ease .3s);
+      }
+
+      &:hover, &:active{
+        .swiper-button-next{
+          opacity: 1;
+          right: 10px;
+        }
+
+        .swiper-button-prev{
+          opacity: 1;
+          left: 10px;
+        }
       }
     }
   }
-}
-.swiper-slide {
-  background: #fff;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 40px 60px;
+  .swiper-slide {
+    background: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px 60px;
 
-  .lh-transition(opacity ease .5s);
+    .lh-transition(opacity ease .5s);
 
-  @media (min-width: 768px) {
-    max-width: 750px;
-  }
-  @media (min-width: 992px) {
-    max-width: 970px;
-  }
-  @media (min-width: 1200px) {
-    max-width: 1170px;
-  }
-
-  h3{
-    color: @main;
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  p{
-    font-size: 1.2rem;
-    padding: .8rem 0;
-  }
-
-  &.swiper-slide-prev, &.swiper-slide-next{
-    opacity: .5;
-  }
-
-  @media (max-width: 401px) {
-    padding: 10px 15px 50px 15px;
-    overflow-y: scroll;
+    @media (min-width: 768px) {
+      max-width: 750px;
+    }
+    @media (min-width: 992px) {
+      max-width: 970px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1170px;
+    }
 
     h3{
       color: @main;
       text-align: center;
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      margin-bottom: 2rem;
     }
 
     p{
+      font-size: 1.2rem;
+      padding: .8rem 0;
+    }
+
+    &.swiper-slide-prev, &.swiper-slide-next{
+      opacity: .5;
+    }
+
+    @media (max-width: 401px) {
+      padding: 10px 15px 50px 15px;
+
+      h3{
+        color: @main;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+
+      p{
+        font-size: 1rem;
+        padding: .2rem 0;
+      }
+    }
+  }
+
+  #main-fast-contacts{
+    background: @main url('images/contact-bg.png') top no-repeat;
+    color: #fff;
+    padding: 20px;
+    min-height: 60vh;
+
+    h1{
+      color: #fff;
+      font-size: 3rem;
+      padding-bottom: 1rem;
+    }
+
+    a{
+      color: #fff;
+
+      &.phone{
+        display: block;
+        font-size: 1.8rem;
+        padding: .6rem 0;
+      }
+    }
+
+    .phone-title{
       font-size: 1rem;
-      padding: .2rem 0;
-    }
-  }
-}
-
-#main-fast-contacts{
-  background: @main url('/images/contact-bg.png') top no-repeat;
-  color: #fff;
-  padding: 20px;
-  min-height: 60vh;
-
-  h1{
-    color: #fff;
-    font-size: 3rem;
-    padding-bottom: 1rem;
-  }
-
-  a{
-    color: #fff;
-
-    &.phone{
       display: block;
-      font-size: 1.8rem;
-      padding: .6rem 0;
     }
-  }
 
-  .phone-title{
-    font-size: 1rem;
-    display: block;
-  }
+    .reception{
+      background: darken(@main, 10%);
+      border: 1px solid #fff;
+      display: block;
+      text-align: center;
+      padding: 1rem 2rem;
+      margin-top: .5rem;
 
-  .reception{
-    background: darken(@main, 10%);
-    border: 1px solid #fff;
-    display: block;
-    text-align: center;
-    padding: 1rem 2rem;
-    margin-top: .5rem;
-
-    .lh-border-radius(5px);
+      .lh-border-radius(5px);
+    }
   }
 }

@@ -1,6 +1,6 @@
 @image-file: 'day.jpg';
-@image: '/images/photos/@{image-file}';
-@blured-image: '/images/photos/blured/@{image-file}';
+@image: 'images/photos/@{image-file}';
+@blured-image: 'images/photos/blured/@{image-file}';
 
 header#main-header{
   background-color: #fff;
@@ -50,7 +50,7 @@ header#main-header{
     }
 
     #top-logo{
-      background: url("/images/logos/only-name.jpg");
+      background: url("images/logos/only-name.jpg");
       background-size: contain;
       background-repeat: no-repeat;
       float: left;
@@ -180,7 +180,8 @@ header#main-header{
                 top: 0;
                 font-size: 3rem;
                 text-align: center;
-                height: 460px;
+                height: 100%;
+                width: 100%;
                 z-index: 0;
               }
 
@@ -246,7 +247,7 @@ header#main-header{
     }
 
     #header-nav-small-logo{
-      background: url("/images/logos/only-name.png");
+      background: url("images/logos/only-name.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;

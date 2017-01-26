@@ -1,10 +1,35 @@
-ul#featured-links li.featured-link {
+#main-featured-links .featured-link .image {
+  background-size: contain;
   background-position: center;
-  background-size: cover;
-  color: #fff;
-  display: inline-block;
-  width: 50%;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 100%;
 }
-.temp-illumintati {
-  background: url("/images/banners/illuminati.png");
+#main-featured-links .featured-link .icon {
+  text-align: center;
+  font-size: 4rem;
+  padding: 2rem;
+}
+#main-featured-links .featured-link h5 {
+  text-align: center;
+  padding: 1rem;
+}
+#main-featured-links .featured-link .overlay {
+  background: #fff;
+  display: inline-block;
+}
+#main-featured-links .featured-link:hover {
+  background: mixed;
+}
+#main-featured-links .gallery .featured-link {
+  background-image: url('/images/photos/main.jpg');
+  background-attachment: fixed;
+  font-size: 2rem;
+  padding-top: 160px;
+  text-align: center;
+  height: 360px;
+  width: 100%;
+}
+#main-featured-links .gallery .featured-link .overlay {
+  padding: 5px 10px;
 }

@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <title>npi-tu.ru alpha</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href="/css/layout.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/css/index.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/css/swiper.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
-    <script type="text/javascript" src="/js/vendor/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="/js/moduleman.js"></script>
-    <script type="text/javascript" src="/js/header.js"></script>
-    <script type="text/javascript" src="/js/navigation.js"></script>
-    <script type="text/javascript" src="/js/nav.js"></script>
-    <script type="text/javascript" src="/js/swiper/swiper.min.js"></script>
-    <script type="text/javascript" src="/js/vendor/jquery.arbitrary-anchor.js"></script>
-    <script type="text/javascript" src="/js/main-slider.js"></script>
-    <script type="text/javascript" src="/js/biw.js"></script>
+    <link href="css/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript" src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/moduleman.js"></script>
+    <script type="text/javascript" src="js/header.js"></script>
+    <script type="text/javascript" src="js/navigation.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.arbitrary-anchor.js"></script>
+    <script type="text/javascript" src="js/main-slider.js"></script>
+    <script type="text/javascript" src="js/events-slider.js"></script>
+    <script type="text/javascript" src="js/biw.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&language=ru"></script>
-    <script type="text/javascript" src="/js/gmaps.js"></script>
+    <script type="text/javascript" src="js/gmaps.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -374,54 +375,11 @@
                         </div>
                     </div>
                 </section>
-                <section id="main-story">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="person">
-                                    <div class="photo-wrapper">
-                                        <div class="photo"><img src="/images/platov.jpg" /></div>
-                                    </div>
-                                    <div class="description">
-                                        <h3>Платов Матвей Иванович</h3>
-                                        <small>Страница истории?</small>
-                                    </div>
-                                </div>
-                                <div class="text">В Отечественную войну 1812 г. Платов командовал казачьими полка-ми на границе, а затем казачьим корпусом из 14 казачьих полков (около 7 тыс. сабель). Нанёс поражение французским войскам в боях при Мире (28 июня) и Романовке (2 июля) – это были первые победы русской армии в войне. После сражения при Салтановке прикрывал отступление генерала П.И. Багратиона к Смоленску, что обеспечило соединение двух основных русских армий.
-                                    В Бородинском сражении 26 августа 1812 г. совершил стремительный рейд в тыл левого фланга французской армии, чем приостановил на два ча-са атаки противника на центр обороны русских войск (на известную «бата-рею», или точнее 7-й корпус генерала Н.Н. Раевского). Пользовавшийся огромным авторитетом и любовью всего Дона, Платов призвал казаков к вступлению в ополчение, и уже в Тарутине казачий воинский контингент достиг 22 тыс. человек. Особенно прославился смелостью и военным ис-кусством во время преследования отступающей армии Наполеона, за что и получил в декабре 1812 г. титул графа. Казаки Платова взяли в плен у реки Березины генерала Дзевановского.
-
-                                </div>
-                                <a href="#" class="button more">Читать историю</a>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="person">
-                                    <div class="photo-wrapper">
-                                        <div class="photo"><img src="/images/rector.gif" /></div>
-                                    </div>
-                                    <div class="description">
-                                        <h4>Передерий Владимир Григорьевич</h4>
-                                        <small>Ректор ЮРГПУ (НПИ)</small>
-                                    </div>
-                                </div>
-                                <div class="text">Руководство университета открыто к взаимодействию со структурами власти всех уровней. В стенах вуза проводятся городские, региональные мероприятия, а также федерального и мирового уровней – такие, как заседание Координационного совета объединений работодателей Южного федерального округа, круглые столы в рамках Всемирного конгресса казаков, встречи с директорами казачьих кадетских корпусов и других образовательных учреждений. На них решаются вопросы участия предпринимателей в трудоустройстве выпускников вузов юга России, подготовки управленческих кадров для ВКО «Всевеликое Войско Донское», развития казачества и казачьих регионов, привлечения студенческой молодёжи к волонтёрскому движению.
-                                </div>
-                                <a href="#" class="button more">Стать студентом?</a>
-                            </div>
-                            <div class="col-lg-3">
-                                <a href="#">
-                                    <div id="feature-magazine">
-                                        <img src="/images/kadin-paper.jpg" class="magazine-preview" />
-                                        <p>Издание "Кадры индустрии"</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <section id="main-content" class="home">
+                    <div class="fake-bg-header"></div>
                     <div class="container">
                         <div class="row">
-                            <div class="fibo-right">
+                            <div class="col-md-8">
                                 <section id="main-news">
                                     <h2>Последние новости:</h2>
                                     <article class="first">
@@ -432,7 +390,7 @@
                                         </div>
                                         <div class="content">
                                             <a class="news-header-link" href="#">
-                                                <header class="article-header imaged" style="background-image: url('/images/photos/back.jpg');">
+                                                <header class="article-header imaged" style="background-image: url('images/photos/back.jpg');">
                                                     <div class="overlay">
                                                         <h3>ЮРГПУ(НПИ) в ТОП-50 лучших вузов России по Техническим, естественнонаучным направлениям и точным наукам</h3>
                                                     </div>
@@ -491,73 +449,194 @@
                                     </a>
                                 </section>
                             </div>
-                            <div id="featured-links-wrapper" class="fibo-left">
-                                <h2>Полезные ссылки:</h2>
-                                <div id="featured-links">
-                                    <a href="//pobeda.npi-tu.ru/" title="День Победы в НПИ">
-                                        <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-9may.da4.jpg');">
-                                            <div class="overlay">
-                                            <h5>День Победы в НПИ</h5>
-                                            </div>
+                            <div id="events-wrapper" class="col-md-4">
+                                <div id="main-events">
+                                    <header class="events-header">
+                                        <div class="button button-prev"><i class="fa fa-angle-left"></i></div>
+                                        <div class="text">Предстоящие события</div>
+                                        <div class="button button-next"><i class="fa fa-angle-right"></i></div>
+                                    </header>
+                                    <div class="events-block">
+                                        <div class="swiper-wrapper">
+                                            <article class="event swiper-slide">
+                                                <div class="dates container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-xs-2 cal-icon"><i class="fa fa-calendar"></i></div>
+                                                        <div class="col-xs-10 dates-event">
+                                                            <p class="start">22 сентября &mdash;</p>
+                                                            <p class="end">29 сентября</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="about">
+                                                    <p>С 22 по 29 сентября 2015 года в университете проводился отборочный (внутривузовский) тур международной студенческой Интернет-олимпиады по дисциплинам: «Русский язык», «История России», «Философия», «Правоведение» и «Социология».</p>
+                                                </div>
+                                                <div class="more-wrapper">
+                                                    <a href="#" class="more">Узнать больше</a>
+                                                </div>
+                                            </article>
+                                            <article class="event swiper-slide">
+                                                <div class="dates container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-xs-2 cal-icon"><i class="fa fa-calendar"></i></div>
+                                                        <div class="col-xs-10 dates-event">
+                                                            <p class="only">2 октября в 17:30</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="about">
+                                                    <p>С 22 по 29 сентября 2015 года в университете проводился отборочный (внутривузовский) тур международной студенческой Интернет-олимпиады по дисциплинам: «Русский язык», «История России», «Философия», «Правоведение» и «Социология».</p>
+                                                </div>
+                                                <div class="more-wrapper">
+                                                    <a href="#" class="more">Узнать больше</a>
+                                                </div>
+                                            </article>
+                                            <article class="event swiper-slide">
+                                                <div class="dates container-fluid">
+                                                    <div class="row">
+                                                        <div class="col-xs-2 cal-icon"><i class="fa fa-calendar"></i></div>
+                                                        <div class="col-xs-10 dates-event">
+                                                            <p class="start">7 октября &mdash;</p>
+                                                            <p class="end">9 октября</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="about">
+                                                    <p>С 22 по 29 сентября 2015 года в университете проводился отборочный (внутривузовский) тур международной студенческой Интернет-олимпиады по дисциплинам: «Русский язык», «История России», «Философия», «Правоведение» и «Социология».</p>
+                                                </div>
+                                                <div class="more-wrapper">
+                                                    <a href="#" class="more">Узнать больше</a>
+                                                </div>
+                                            </article>
                                         </div>
-                                    </a>
-                                    <a href="//wi.npi-tu.ru/" title="Военный институт">
-                                        <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-war.da4.jpg');">
-                                            <div class="overlay">
-                                                <h5>Военный институт</h5>
-                                            </div>
+                                    </div>
+                                </div>
+
+                                <a href="#">
+                                    <div id="feature-magazine">
+                                        <img src="images/kadin-paper.jpg" class="magazine-preview" />
+                                        <p>Издание "Кадры индустрии"</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="main-featured-links">
+                    <div class="wrap-zh">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <a href="//pobeda.npi-tu.ru/" title="День Победы в НПИ" class="featured-link">
+                                        <div class="image" style="background-image: url('/images/banners/victoryday.png');">
                                         </div>
-                                    </a>
-                                    <a href="index.php?id=3347" title="Казачья сотня">
-                                        <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-kazaki.da4.jpg');">
-                                            <div class="overlay">
-                                                <h5>Казачья сотня</h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="//lib.npi-tu.ru/" title="Научно-Техническая Библиотека">
-                                        <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-library.da4.jpg');">
-                                            <div class="overlay">
-                                                <h5>Научно-Техническая Библиотека</h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="//ifvs.npi-tu.ru/" title="Институт физического воспитания и спорта">
-                                        <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-sport.da4.jpg');">
-                                            <div class="overlay">
-                                                <h5>Институт физического воспитания и спорта</h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="//hsm.npi-tu.ru/" title="Высшая школа управления">
-                                        <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-imo.da4.jpg');">
-                                            <div class="overlay">
-                                                <h5>Институт международного образования</h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="//hsm.npi-tu.ru/" title="Высшая школа управления">
-                                        <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-h_school.da4.jpg');">
-                                            <div class="overlay">
-                                                <h5>Высшая школа управления</h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="index.php?id=3544" title="Олимпиада школьников «Звезда»">
-                                        <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-star.da4.jpg');">
-                                            <div class="overlay">
-                                                <h5>Олимпиада школьников «Звезда»</h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="index.php?id=3005" title="Фотогалерея ЮРГПУ(НПИ">
-                                        <div class="featured-link" style="background-image: url('http://www.npi-tu.ru/assets/cache/images/logos/left/186x-gallery.da4.jpg');">
-                                            <div class="overlay">
-                                                <h5>Фотогалерея ЮРГПУ(НПИ)</h5>
-                                            </div>
-                                        </div>
+                                        <h5>День Победы в НПИ</h5>
                                     </a>
                                 </div>
+                                <div class="col-sm-3">
+                                    <a href="//wi.npi-tu.ru/" title="Военный институт" class="featured-link">
+                                        <div class="image" style="background-image: url('/images/banners/afrf.png');">
+                                        </div>
+                                        <h5>Военный институт</h5>
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="index.php?id=3347" title="Казачья сотня" class="featured-link">
+                                        <div class="image" style="background-image: url('/images/banners/donkazak.png');">
+                                        </div>
+                                        <h5>Казачья сотня</h5>
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="index.php?id=3544" title="Олимпиада школьников «Звезда»" class="featured-link">
+                                        <div class="image" style="background-image: url('/images/banners/star.png');">
+                                        </div>
+                                        <h5>Олимпиада школьников «Звезда»</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-shadow">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <a href="//ifvs.npi-tu.ru/" title="Институт физического воспитания и спорта" class="featured-link">
+                                        <div class="icon">
+                                            <i class="fa fa-futbol-o"></i>
+                                        </div>
+                                        <h5>Институт физического воспитания и спорта</h5>
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="//hsm.npi-tu.ru/" title="Высшая школа управления" class="featured-link">
+                                        <div class="icon">
+                                            <i class="fa fa-globe"></i>
+                                        </div>
+                                        <h5>Институт международного образования</h5>
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="//hsm.npi-tu.ru/" title="Высшая школа управления" class="featured-link">
+                                        <div class="icon">
+                                            <i class="fa fa-graduation-cap"></i>
+                                        </div>
+                                        <h5>Высшая школа управления</h5>
+                                    </a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="//lib.npi-tu.ru/" title="Научно-Техническая Библиотека" class="featured-link">
+                                        <div class="icon">
+                                            <i class="fa fa-book"></i>
+                                        </div>
+                                        <h5>Научно-Техническая Библиотека</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <a href="index.php?id=3005" title="Фотогалерея ЮРГПУ(НПИ">
+                            <div class="featured-link">
+                                <div class="overlay">
+                                    <h5>Фотогалерея ЮРГПУ(НПИ)</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section id="main-story">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="person">
+                                    <div class="photo-wrapper">
+                                        <div class="photo"><img src="images/platov.jpg" /></div>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Платов Матвей Иванович</h3>
+                                        <small>Страница истории?</small>
+                                    </div>
+                                </div>
+                                <div class="text">В Отечественную войну 1812 г. Платов командовал казачьими полка-ми на границе, а затем казачьим корпусом из 14 казачьих полков (около 7 тыс. сабель). Нанёс поражение французским войскам в боях при Мире (28 июня) и Романовке (2 июля) – это были первые победы русской армии в войне. После сражения при Салтановке прикрывал отступление генерала П.И. Багратиона к Смоленску, что обеспечило соединение двух основных русских армий.
+                                    В Бородинском сражении 26 августа 1812 г. совершил стремительный рейд в тыл левого фланга французской армии, чем приостановил на два ча-са атаки противника на центр обороны русских войск (на известную «бата-рею», или точнее 7-й корпус генерала Н.Н. Раевского). Пользовавшийся огромным авторитетом и любовью всего Дона, Платов призвал казаков к вступлению в ополчение, и уже в Тарутине казачий воинский контингент достиг 22 тыс. человек. Особенно прославился смелостью и военным ис-кусством во время преследования отступающей армии Наполеона, за что и получил в декабре 1812 г. титул графа. Казаки Платова взяли в плен у реки Березины генерала Дзевановского.
+
+                                </div>
+                                <a href="#" class="button more">Читать историю</a>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="person">
+                                    <div class="photo-wrapper">
+                                        <div class="photo"><img src="images/rector.gif" /></div>
+                                    </div>
+                                    <div class="description">
+                                        <h4>Передерий Владимир Григорьевич</h4>
+                                        <small>Ректор ЮРГПУ (НПИ)</small>
+                                    </div>
+                                </div>
+                                <div class="text">Руководство университета открыто к взаимодействию со структурами власти всех уровней. В стенах вуза проводятся городские, региональные мероприятия, а также федерального и мирового уровней – такие, как заседание Координационного совета объединений работодателей Южного федерального округа, круглые столы в рамках Всемирного конгресса казаков, встречи с директорами казачьих кадетских корпусов и других образовательных учреждений. На них решаются вопросы участия предпринимателей в трудоустройстве выпускников вузов юга России, подготовки управленческих кадров для ВКО «Всевеликое Войско Донское», развития казачества и казачьих регионов, привлечения студенческой молодёжи к волонтёрскому движению.
+                                </div>
+                                <a href="#" class="button more">Стать студентом?</a>
                             </div>
                         </div>
                     </div>

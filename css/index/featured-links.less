@@ -1,3 +1,108 @@
+#main-featured-links{
+  padding-top: 30px;
+  
+  .featured-link{
+    display: block;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+
+    .lh-border-radius(5px);
+
+    .image{
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 120px;
+      width: 100%;
+    }
+
+    .icon{
+      text-align: center;
+      font-size: 4rem;
+      padding: 2rem;
+    }
+
+    h5{
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .overlay{
+      background: #fff;
+      display: inline-block;
+    }
+
+    &:hover{
+      background: mix(#fff, @main, 10%);
+      color: #fff;
+      text-decoration: none;
+
+      h5{
+        text-decoration: none;
+      }
+    }
+
+    @media (max-width: 401px) {
+      padding-top: 0;
+      margin-bottom: 1rem;
+
+      .image, .icon{
+        display: none;
+      }
+    }
+  }
+
+  .gallery{
+    background-image: url('/images/photos/main.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 2rem;
+    height: 360px;
+
+    .featured-link{
+      padding-top: 140px;
+      text-align: center;
+      height: 360px;
+      width: 100%;
+
+      .lh-transition(background ease .3s);
+    }
+
+    .overlay{
+      padding: 5px 10px;
+    }
+
+    &:hover{
+      color: @main;
+      text-decoration: none;
+
+      .featured-link{
+        background: fadeOut(mix(#fff, @main, 10%), 50%);
+      }
+
+      h5{
+        color: @main;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .wrap-zh{
+    background: #fff;
+    position: relative;
+    z-index: 5;
+  }
+
+  .wrap-shadow{
+    position: relative;
+    z-index: 3;
+
+    .lh-box-shadow(0 0 40px rgba(0,0,0,.4));
+  }
+}
+
+/** @deprecated
 #featured-links-wrapper{
   padding: 20px 0;
 
@@ -55,14 +160,4 @@ div#featured-links{
     }
   }
 
-}
-
-.temp-illumintati{
-  background: url("/images/banners/illuminati.png");
-}
-.temp-cat{
-  background: url("/images/banners/cat.jpg");
-}
-.temp-scincidae{
-  background: url("/images/banners/scincidae.JPG");
-}
+}*/

@@ -1,0 +1,118 @@
+#main-events{
+  margin-bottom: 30px;
+  width: 100%;
+
+  @media (max-width: 992px) {
+    margin-top: 30px;
+  }
+
+  header{
+    background: @accent;
+    color: #fff;
+    height: 60px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    line-height: 60px;
+    border-bottom: 4px solid darken(@accent, 10%);
+
+    .text{
+      margin-left: -15px;
+      font-size: 1.3rem;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+
+      @media (max-width: 401px) {
+        font-size: 1rem;
+      }
+    }
+
+    .button{
+      font-size: 2rem;
+      text-align: center;
+      position: relative;
+      height: 60px;
+      width: 60px;
+      z-index: 1;
+
+      &:hover{
+        background: darken(@accent, 20%);
+        border-bottom: 4px solid darken(@accent, 30%);
+      }
+
+      &.swiper-button-disabled{
+        color: #bbb;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+
+        &:hover{
+          background: transparent;
+          border-bottom: none;
+        }
+      }
+    }
+
+    .button-prev{
+      float: left;
+    }
+
+    .button-next{
+      float: right;
+    }
+  }
+
+  .events-block{
+    background: darken(@accent, 45%);
+    color: #fff;
+    height: 400px;
+    overflow: hidden;
+    padding: 2rem 0;
+
+    .dates{
+      margin-bottom: 1rem;
+
+      .cal-icon{
+        text-align: center;
+      }
+
+      .dates-event{
+        p.start{
+          font-size: 1.6rem;
+        }
+
+        p.only{
+          font-size: 1.6rem;
+          line-height: 3rem;
+        }
+
+        p.end{
+          margin-top: 6px;
+        }
+      }
+
+      i{
+        font-size: 3rem;
+      }
+    }
+
+    .about{
+      text-align: left;
+      line-height: 1.27;
+      padding: 0 15px;
+    }
+
+    .more-wrapper{
+      padding: 30px 15px 0 15px;
+
+      .more{
+        background: darken(@accent, 60%);
+        color: #fff;
+        border: 1px solid #fff;
+        display: block;
+        text-align: center;
+        padding: 1rem 2rem;
+        margin-top: .5rem;
+
+        .lh-border-radius(5px);
+      }
+    }
+  }
+}

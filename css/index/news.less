@@ -1,13 +1,32 @@
+#main-content{
+  .fake-bg-header{
+    background: #eee;
+    height: 60px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    border-bottom: 4px solid darken(#eee, 10%);
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+}
+
 #main-news{
-  padding: 20px;
-
   h2{
-    font-size: 2rem;
-    padding: 0 0 10px 20px;
-
-    @media (max-width: 700px) {
-      padding: 0;
-    }
+    background: #eee;
+    color: #000;
+    height: 60px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.6);
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 60px;
+    padding-left: 20px;
+    border-bottom: 4px solid darken(#eee, 10%);
+    margin-bottom: 20px;
   }
 
   article{
@@ -22,7 +41,7 @@
     }
 
     .left{
-      background-image: url("/images/mileline.png");
+      background-image: url("images/mileline.png");
       background-position: top;
       background-repeat: repeat-y;
       display: table-cell;

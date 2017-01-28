@@ -1,3 +1,5 @@
+@image-path: '../../';
+
 * {
   background-image: none !important;
   //color: #000;
@@ -342,7 +344,7 @@ header#main-header{
     }
 
     #header-main-logo{
-      background-image: url("images/logos/full.png");
+      background-image: url("@{image-path}images/logos/full.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -462,7 +464,7 @@ footer#main-footer{
   }
 
   #footer-map{
-    background: url('images/map.png') center no-repeat;
+    background: url('@{image-path}images/map.png') center no-repeat;
     height: 60vh;
     overflow: hidden;
     /*margin-left: -15px;

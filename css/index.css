@@ -320,7 +320,7 @@
   }
 }
 #main-featured-links .gallery {
-  background-image: url('/images/photos/main.jpg');
+  background-image: url('images/photos/main.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

@@ -476,7 +476,7 @@ header#main-header.full div#main-header-landing #main-heder-quicklinks .arrow-co
   background: #fafafa;
 }
 header#main-header.full #header-main-logo {
-  background-image: url("/images/logos/full.png");
+  background-image: url("images/logos/full.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -528,7 +528,7 @@ header#main-header.small div#main-header-landing #main-heder-quicklinks {
   display: none;
 }
 header#main-header.small #header-main-logo {
-  background-image: url("/images/logos/full.png");
+  background-image: url("images/logos/full.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -753,7 +753,7 @@ footer#main-footer .col img {
   padding-top: 20px;
 }
 footer#main-footer #footer-map {
-  background: url('/images/map.png') center no-repeat;
+  background: url('images/map.png') center no-repeat;
   height: 60vh;
   overflow: hidden;
   /*margin-left: -15px;
@@ -1113,7 +1113,7 @@ footer#main-footer #footer-map #footer-map-popup:before {
   background: #fafafa;
 }
 .biw header#main-header.full #header-main-logo {
-  background-image: url("/images/logos/full.png");
+  background-image: url("images/logos/full.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1204,7 +1204,7 @@ footer#main-footer #footer-map #footer-map-popup:before {
   color: #000;
 }
 .biw footer#main-footer #footer-map {
-  background: url('/images/map.png') center no-repeat;
+  background: url('images/map.png') center no-repeat;
   height: 60vh;
   overflow: hidden;
   /*margin-left: -15px;

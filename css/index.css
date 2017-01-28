@@ -320,7 +320,7 @@
   }
 }
 #main-featured-links .gallery {
-  background-image: url('../images/photos/main.jpg');
+  background-image: url('images/photos/main.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -401,7 +401,7 @@
   }
 }
 #main-news article .left {
-  background-image: url("../images/mileline.png");
+  background-image: url("images/mileline.png");
   background-position: top;
   background-repeat: repeat-y;
   display: table-cell;

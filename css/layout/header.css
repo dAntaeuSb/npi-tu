@@ -1,13 +1,13 @@
 header#main-header {
   background-color: #fff;
-  background-image: url("/images/header.jpg");
+  background-image: url("../images/header.jpg");
   background-position: center;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
 }
 header#main-header nav#main-heder-nav {
-  background-image: url("/images/header-blured.jpg");
+  background-image: url("../images/header-blured.jpg");
   background-position: center;
   background-size: cover;
   font-weight: 300;
@@ -64,7 +64,7 @@ header#main-header .impact {
   height: 100%;
 }
 #header-main-logo {
-  background-image: url("/images/logo.png");
+  background-image: url("../images/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

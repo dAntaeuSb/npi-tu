@@ -753,7 +753,7 @@ footer#main-footer .col img {
   padding-top: 20px;
 }
 footer#main-footer #footer-map {
-  background: url('images/map.png') center no-repeat;
+  background: url('../../images/map.png') center no-repeat;
   height: 60vh;
   overflow: hidden;
   /*margin-left: -15px;

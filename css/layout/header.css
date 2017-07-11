@@ -1,6 +1,6 @@
 header#main-header {
   background-color: #fff;
-  background-image: url('images/photos/day.jpg');
+  background-image: url('../images/photos/day.jpg');
   background-size: cover;
   background-position: center;
   font-family: 'Roboto', sans-serif;
@@ -19,7 +19,7 @@ header#main-header #header-nav-bg-wrapper {
   z-index: -1;
 }
 header#main-header #header-nav-bg-wrapper #main-header-nav-bg {
-  background-image: url('images/photos/blured/day.jpg');
+  background-image: url('../images/photos/blured/day.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -40,7 +40,7 @@ header#main-header nav#main-header-nav > .impact > .container {
   padding: 0;
 }
 header#main-header nav#main-header-nav #top-logo {
-  background: url("images/logos/only-name.jpg");
+  background: url("../images/logos/only-name.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   float: left;
@@ -226,7 +226,7 @@ header#main-header nav#main-header-nav #header-nav-open-button-wrap {
   }
 }
 header#main-header nav#main-header-nav #header-nav-small-logo {
-  background: url("images/logos/only-name.png");
+  background: url("../images/logos/only-name.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -273,7 +273,7 @@ header#main-header nav#main-header-nav #header-search i {
   right: 16px;
 }
 header#main-header nav#main-header-nav #header-search-input {
-  background: bottom left linear-gradient(#ffffff, #ffffff) no-repeat, bottom center linear-gradient(#ffffff, #ffffff) repeat-x, bottom right linear-gradient(#ffffff, #ffffff) no-repeat;
+  background: bottom left linear-gradient(#fff, #fff) no-repeat, bottom center linear-gradient(#fff, #fff) repeat-x, bottom right linear-gradient(#fff, #fff) no-repeat;
   background-size: 1px 6px, 1px 1px, 1px 6px;
   border: none;
   border-bottom: 2px solid #fff;
@@ -283,7 +283,7 @@ header#main-header nav#main-header-nav #header-search-input {
 }
 header#main-header nav#main-header-nav #header-search-input:focus {
   outline: none;
-  background: bottom left linear-gradient(#ed7d1c, #ed7d1c) no-repeat, bottom center linear-gradient(#ed7d1c, #ed7d1c) repeat-x, bottom right linear-gradient(#ed7d1c, #ed7d1c) no-repeat;
+  background: bottom left linear-gradient(#ED7D1C, #ED7D1C) no-repeat, bottom center linear-gradient(#ED7D1C, #ED7D1C) repeat-x, bottom right linear-gradient(#ED7D1C, #ED7D1C) no-repeat;
   border-bottom: 2px solid #ED7D1C;
 }
 @media screen and (max-width: 1200px) {
@@ -414,9 +414,9 @@ header#main-header.full div#main-header-landing .container .header-button {
   display: inline-block;
   padding: 3vh 3vw;
   margin: -1vh 0 0 -1vh;
-  -webkit-box-shadow: 1vh 1vh 0 #ffffff;
-  -moz-box-shadow: 1vh 1vh 0 #ffffff;
-  box-shadow: 1vh 1vh 0 #ffffff;
+  -webkit-box-shadow: 1vh 1vh 0 #fff;
+  -moz-box-shadow: 1vh 1vh 0 #fff;
+  box-shadow: 1vh 1vh 0 #fff;
 }
 header#main-header.full div#main-header-landing .container .header-button:hover {
   margin: 0;
@@ -476,7 +476,7 @@ header#main-header.full div#main-header-landing #main-heder-quicklinks .arrow-co
   background: #fafafa;
 }
 header#main-header.full #header-main-logo {
-  background-image: url("images/logos/full.png");
+  background-image: url("../images/logos/full.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -528,7 +528,7 @@ header#main-header.small div#main-header-landing #main-heder-quicklinks {
   display: none;
 }
 header#main-header.small #header-main-logo {
-  background-image: url("images/logos/full.png");
+  background-image: url("../images/logos/full.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
